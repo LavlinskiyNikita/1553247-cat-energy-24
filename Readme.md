@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [NIKita LAVlinskiy](https://up.htmlacademy.ru/adaptive/24/user/1553247).
-* Наставник: `Неизвестно`.
+* Наставник: [ДенисБайдаров](https://htmlacademy.ru/profile/4er).
 
 ---
 
