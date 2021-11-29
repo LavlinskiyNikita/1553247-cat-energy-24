@@ -7,93 +7,85 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo">
-          <a href="logo__link">
-            <img src="/source/image/svg/logo.svg" alt="car Energy" />
-          </a>
-        </div>
-        <div class="logo-text">
-          <img src="/source/image/svg/catenergy.svg" alt="car Energy" />
-        </div>
         <nav class="menu">
+          <div class="logo">
+            <a class="logo__link">
+              <img src="./image/svg/logo.svg" alt="car Energy" />
+            </a>
+            <a class="logo-text">
+              <img src="./image/svg/catenergy.svg" alt="car Energy" />
+            </a>
+          </div>
           <ul class="menu__list">
             <li class="menu__item">
-              <a href="" class="menu__link menu__link--current"> главная</a>
+              <a class="menu__link menu__link--current">главная</a>
             </li>
             <li class="menu__item">
-              <a href="./catalog.html" class="menu__link">каталог продукции</a>
+              <a href="./catalog" class="menu__link">каталог продукции</a>
             </li>
             <li class="menu__item">
-              <a href="./form.html" class="menu__link">подбор программы</a>
+              <a href="./form" class="menu__link">подбор программы</a>
             </li>
           </ul>
+          <button type="button" class="humburger">
+            <span class="humburger__line"></span>
+            <span class="humburger__line"></span>
+            <span class="humburger__line"></span>
+          </button>
         </nav>
-        <button type="button" class="humburger">
-          <span class="humburger__line"></span>
-          <span class="humburger__line"></span>
-          <span class="humburger__line"></span>
-        </button>
       </div>
     </header>
     <main class="main">
-      <section class="first-screen-section">
-        <div class="container">
-          <div class="first-screen">
-            <div class="first-screen__title">
-              <h1 class="title">Функциональное питание для котов</h1>
-            </div>
-            <div class="first-screen__subtitle">
-              <p class="subtitle__text">Занялся собой? Займись котом!</p>
-            </div>
-            <picture>
-              <img src="./image/index-can-mobile1.png" alt="tavar" />
-            </picture>
-            <a href="" class="first-screen__link">подобрать программу</a>
+      <div class="container first-screen-section">
+        <div class="first-screen">
+          <div class="first-screen__title">
+            <h1 class="title">Функциональное питание для котов</h1>
           </div>
+          <div class="first-screen__text">
+            <p class="text">Занялся собой? Займись котом!</p>
+          </div>
+          <picture>
+            <img src="./image/index-can-mobile1.png" alt="tavar" />
+          </picture>
+          <a href="" class="first-screen__link">подобрать программу</a>
         </div>
-      </section>
-      <section class="weight-loss">
+      </div>
+      <section class="weight-loss container">
         <div class="weight-loss__conent">
-          <div class="columns">
-            <div class="columns__icon">
-              <img src="./image/svg/Vectorcar.svg" alt="weight loss icon" />
-            </div>
-            <h3 class="weight-loss__title">похудение</h3>
-            <div class="columns__text">
-              <p class="columns__desc">
+          <div class="column column--limming">
+            <h3 class="title-card">похудение</h3>
+            <div class="column__text">
+              <p class="column__desc">
                 Ваш кот весит больше собаки и почти утратил способность лазить
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
             </div>
-            <div class="columns__outline"></div>
-            <a href="" class="columns__link">каталог slim</a>
+            <div class="column__outline"></div>
+            <a href="" class="column__link">каталог slim</a>
           </div>
-          <div class="columns">
-            <div class="columns__icon">
-              <img src="./image/svg/Vectortigr.svg" alt="weight loss icon" />
-            </div>
-            <h3 class="weight-loss__title">Набор массы</h3>
-            <div class="columns__text">
-              <p class="columns__desc">
+
+          <div class="column column--mass">
+            <h3 class="title-card">похудение</h3>
+            <div class="column__text">
+              <p class="column__desc">
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
             </div>
-            <div class="columns__outline"></div>
-            <a href="" class="columns__link">каталог pro</a>
+            <div class="column__outline"></div>
+            <a href="" class="column__link">каталог pro</a>
           </div>
         </div>
       </section>
-      <section class="now-work">
-        <div class="container">
+      <section class="now-work container">
           <div class="now-work__title">
-            <h1 class="title">Функциональное питание для котов</h1>
+            <h2 class="title">Функциональное питание для котов</h2>
           </div>
           <ul class="work">
             <li class="work__item">
               <div class="work__icon-block">
-                <img src="/source/image/svg-icon/icon_leaf.svg" alt="icon" />
+                <img src="./image/svg-icon/icon_leaf.svg" alt="icon" />
               </div>
               <p class="work__text">
                 Функциональное питание содержит только полезные питательные
@@ -102,7 +94,7 @@
             </li>
             <li class="work__item">
               <div class="work__icon-block">
-                <img src="/source/image/svg-icon/icon_tub.svg" alt="icon" />
+                <img src="./image/svg-icon/icon_tub.svg" alt="icon" />
               </div>
               <p class="work__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
@@ -111,7 +103,7 @@
             </li>
             <li class="work__item">
               <div class="work__icon-block">
-                <img src="/source/image/svg-icon/icon_eat.svg" alt="icon" />
+                <img src="./image/svg-icon/icon_eat.svg" alt="icon" />
               </div>
               <p class="work__text">
                 Замените один-два приема обычной еды на наше функциональное
@@ -120,7 +112,7 @@
             </li>
             <li class="work__item">
               <div class="work__icon-block">
-                <img src="/source/image/svg-icon/icon_alarm.svg" alt="icon" />
+                <img src="./image/svg-icon/icon_alarm.svg" alt="icon" />
               </div>
               <p class="work__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего
@@ -129,16 +121,14 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="example-aection">
-        <div class="container">
+      <section class="example-section container">
           <div class="example">
             <div class="example__info">
-              <div class="example__info__title">
-                <h1 class="title">Живой пример</h1>
+              <div class="example__title">
+                <h2 class="title">Живой пример</h2>
               </div>
-              <div class="example__info__subtitle">
-                <p class="subtitle-text">
+              <div class="example__text">
+                <p class="text">
                   Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный
                   корм на Cat Energy Slim. Отличный результат без изнуряющих
                   тренировок! При этом он не менял своих привычек и по-прежнему
@@ -155,15 +145,15 @@
                   <p class="result__text">затрачено времени</p>
                 </li>
               </ul>
-              <div class="example__info__spending">
-                <p class="example__info__text">
+              <div class="example__spending">
+                <p class="example__text-price">
                   Затраты на питание: <span>15 000</span> РУБ.
                 </p>
               </div>
             </div>
-            <div class="example__slaider">
-              <div class="example__image-slaider">
-                <img src="/source/image/before-mobile.png" alt="cat" />
+            <div class="example__slider">
+              <div class="example__image-slider">
+                <img src="./image/before-mobile.png" alt="cat" />
               </div>
               <div class="example__range">
                 <button class="example__button">было</button>
@@ -174,10 +164,9 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
       <section class="map-section">
-        <h1 class="map__title">карта</h1>
+        <h2 class="hidden">карта</h2>
         <div class="map">
           <div class="address">
             <div class="container">
@@ -205,36 +194,32 @@
     </main>
     <footer class="footer">
       <div class="logo-text">
-        <img src="/source/image/svg/catenergy.svg" alt="car Energy" />
+        <img src="./image/svg/catenergy.svg" alt="car Energy" />
       </div>
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <img
-              src="/source/image/svg-icon/social/icon_vkontakte.svg"
-              alt=""
-            />
+            <img src="./image/svg-icon/social/icon_vkontakte.svg" alt="" />
           </li>
           <li class="social__item">
-            <img
-              src="/source/image/svg-icon/social/icon_instagram.svg"
-              alt=""
-            />
+            <img src="./image/svg-icon/social/icon_instagram.svg" alt="" />
           </li>
           <li class="social__item">
-            <img src="/source/image/svg-icon/social/icon_facebook.svg" alt="" />
+            <img src="./image/svg-icon/social/icon_facebook.svg" alt="" />
           </li>
         </ul>
       </div>
-      <div class="HtmlAcademy">
-        <div class="HtmlAcademy__text">
-          <p class="HtmlAcademy__slogan">HTML Academy</p>
+      <div class="html-academy">
+        <div class="html-academy__text">
+          <p class="html-academy__slogan">HTML Academy</p>
         </div>
-        <div class="HtmlAcademy__logo">
-          <img
-            src="/source/image/svg-icon/social/htmlhtmlacademy.svg"
-            alt="logo HtmlAcademy"
-          />
+        <div class="html-academy__logo">
+          <a href="">
+            <img
+              src="./image/svg-icon/social/htmlhtmlacademy.svg"
+              alt="logo HtmlAcademy"
+            />
+          </a>
         </div>
       </div>
     </footer>
