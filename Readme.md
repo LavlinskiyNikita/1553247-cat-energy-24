@@ -2,7 +2,6 @@
 
 * Студент: [NIKita LAVlinskiy](https://up.htmlacademy.ru/adaptive/24/user/1553247).
 * Наставник: [ДенисБайдаров](https://htmlacademy.ru/profile/4er).
-
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
