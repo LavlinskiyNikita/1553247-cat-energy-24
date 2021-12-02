@@ -11,10 +11,10 @@
       <div class="container">
         <nav class="menu">
           <div class="logo">
-            <a class="logo__link">
+            <a href="./index.html" class="logo__link">
               <img src="./img/svg/logo.svg" alt="car Energy" />
             </a>
-            <a class="logo-text">
+            <a href="./index.html" class="logo-text">
               <img src="./img/svg/catenergy.svg" alt="car Energy" />
             </a>
           </div>
@@ -48,15 +48,14 @@
           </p>
         </div>
         <form action="get" class="form">
-          <section class="form__name-cat">
-            <h1 class="hidden">имя кота</h1>
-            <div class="form__informationinformation">
-              <label class="form__lable-name">
+          <fieldset class="form__fieldset form__name-cat">
+            <div class="form__informationin">
+              <label class="form__label-name">
                 ИМЯ:*
                 <input
                   placeholder="барсик"
                   type="text"
-                  name="name cat"
+                  name="namecat"
                   class="form__input-text"
                 />
               </label>
@@ -66,7 +65,7 @@
                   placeholder="7"
                   min="0"
                   type="number"
-                  name="weight cat"
+                  name="weightcat"
                   class="form__input-text"
                 />
               </label>
@@ -76,13 +75,13 @@
                   min="1"
                   placeholder="7"
                   type="number"
-                  name="year cat"
+                  name="yearcat"
                   class="form__input-text"
                 />
               </label>
             </div>
             <div class="form__radio">
-              <label class="form__lable-radio">
+              <label class="form__label-radio">
                 <input
                   type="radio"
                   name="choice"
@@ -91,7 +90,7 @@
                 />
                 похудение
               </label>
-              <label>
+              <label class="form__label-radio">
                 <input
                   type="radio"
                   name="choice"
@@ -100,7 +99,7 @@
                 />
                 Набор массы
               </label>
-              <label>
+              <label class="form__label-radio">
                 <input
                   type="radio"
                   name="choice"
@@ -110,18 +109,17 @@
                 Не знаю (Нужен ваш совет)
               </label>
             </div>
-          </section>
-          <section class="form__contacts">
-            <h1 class="hidden">контакты</h1>
-            <div class="form__title">
-              <h2 class="form-title">Контактные данные (владельца кота)</h2>
-            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__name-cat">
+            <legend class="form__legend">
+              Контактные данные (владельца кота)
+            </legend>
             <label>
               E-mail:*
               <input
                 placeholder="кuklachev@gmail.com"
                 type="email"
-                name="name cat"
+                name="emailcat"
               />
             </label>
             <label>
@@ -132,9 +130,9 @@
                 name="weight cat"
               />
             </label>
-          </section>
-          <section class="form__coment-section">
-            <h1 class="hidden">сообщения</h1>
+          </fieldset>
+          <fieldset class="form__fieldset form__name-cat">
+            <legend class="form__legend">Комментарий</legend>
             <textarea
               placeholder="Расскажите обо всех повадках кота"
               name="massenge"
@@ -143,9 +141,9 @@
               rows="10"
             >
             </textarea>
-          </section>
-          <section class="form__Additionally-section">
-            <h1 class="hidden">галочки</h1>
+          </fieldset>
+          <fieldset class="form__fieldset form__name-cat">
+            <legend class="form__legend">Дополнительно</legend>
             <label>
               <input type="checkbox" name="sweetener" id="sweetener" />
               сахарозаменитель
@@ -166,11 +164,11 @@
               <input type="checkbox" name="vitamins" id="vitamins" />
               витамины
             </label>
-          </section>
-          <button class="form__button-submit" type="submit">
-            отправить заявку
-          </button>
-          <p class="form__Mandatory">* — Обязательные поля</p>
+            <button class="form__button-submit" type="submit">
+              отправить заявку
+            </button>
+            <p class="form__Mandatory">* — Обязательные поля</p>
+          </fieldset>
         </form>
       </section>
 
