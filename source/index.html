@@ -7,17 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="header">
+    <header class="header header--cat">
       <div class="container">
         <nav class="menu">
-          <div class="logo">
-            <a class="logo__link">
+            <a class="logo-link">
               <img src="./img/svg/logo.svg" alt="car Energy" />
             </a>
             <a class="logo-text">
               <img src="./img/svg/catenergy.svg" alt="car Energy" />
             </a>
-          </div>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link menu__link--current">главная</a>
@@ -30,9 +28,9 @@
             </li>
           </ul>
           <button type="button" class="humburger">
-            <span class="humburger__line"></span>
-            <span class="humburger__line"></span>
-            <span class="humburger__line"></span>
+            <div class="humburger__line"></div>
+            <div class="humburger__line"></div>
+            <div class="humburger__line"></div>
           </button>
         </nav>
       </div>
@@ -41,12 +39,10 @@
       <div class="container first-screen-section">
         <div class="first-screen">
           <div class="first-screen__title">
-            <h1 class="title">Функциональное питание для котов</h1>
+            <h1 class="title title--main-screen">Функциональное питание для котов</h1>
           </div>
-          <div class="first-screen__text">
-            <p class="text">Занялся собой? Займись котом!</p>
-          </div>
-          <picture>
+            <p class="first-screen__text">Занялся собой? Займись котом!</p>
+          <picture class="first-screen__image">
             <img src="./img/index-can-mobile1.png" alt="tavar" />
           </picture>
           <a href="" class="first-screen__link">подобрать программу</a>
@@ -82,12 +78,12 @@
       </section>
       <section class="now-work container">
           <div class="now-work__title">
-            <h2 class="title">Функциональное питание для котов</h2>
+            <h2 class="title">Как это работает</h2>
           </div>
           <ul class="work">
             <li class="work__item">
               <div class="work__icon-block">
-                <img src="./img/svg-icon/icon_leaf.svg" alt="icon" />
+                <img class="work__image-icon" src="./img/svg-icon/icon_leaf.svg" alt="icon" />
               </div>
               <p class="work__text">
                 Функциональное питание содержит только полезные питательные
@@ -96,7 +92,7 @@
             </li>
             <li class="work__item">
               <div class="work__icon-block">
-                <img src="./img/svg-icon/icon_tub.svg" alt="icon" />
+                <img class="work__image-icon" src="./img/svg-icon/icon_tub.svg" alt="icon" />
               </div>
               <p class="work__text">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и
@@ -105,7 +101,7 @@
             </li>
             <li class="work__item">
               <div class="work__icon-block">
-                <img src="./img/svg-icon/icon_eat.svg" alt="icon" />
+                <img class="work__image-icon" src="./img/svg-icon/icon_eat.svg" alt="icon" />
               </div>
               <p class="work__text">
                 Замените один-два приема обычной еды на наше функциональное
@@ -114,7 +110,7 @@
             </li>
             <li class="work__item">
               <div class="work__icon-block">
-                <img src="./img/svg-icon/icon_alarm.svg" alt="icon" />
+                <img class="work__image-icon" src="./img/svg-icon/icon_alarm.svg" alt="icon" />
               </div>
               <p class="work__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего
@@ -123,14 +119,15 @@
             </li>
           </ul>
         </div>
+      </section>
       <section class="example-section container">
           <div class="example">
             <div class="example__info">
               <div class="example__title">
                 <h2 class="title">Живой пример</h2>
               </div>
-              <div class="example__text">
-                <p class="text">
+              <div class="example__descr">
+                <p class="example__text">
                   Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный
                   корм на Cat Energy Slim. Отличный результат без изнуряющих
                   тренировок! При этом он не менял своих привычек и по-прежнему
@@ -139,12 +136,16 @@
               </div>
               <ul class="result">
                 <li class="result__item">
-                  <h3 class="result__meaning">5 КГ</h3>
-                  <p class="result__text">снижение веса</p>
+                  <div class="result__block">
+                    <h3 class="result__meaning">5 КГ</h3>
+                    <p class="result__text">снижение веса</p>
+                  </div>
                 </li>
                 <li class="result__item">
-                  <h3 class="result__meaning">60 ДНЕЙ</h3>
-                  <p class="result__text">затрачено времени</p>
+                  <div class="result__block">
+                    <h3 class="result__meaning">60 ДНЕЙ</h3>
+                    <p class="result__text">затрачено времени</p>
+                  </div>
                 </li>
               </ul>
               <div class="example__spending">
@@ -174,10 +175,10 @@
           </div>
       </section>
       <section class="map-section">
-        <h2 class="hidden">карта</h2>
+        <h2 class="hidden-text">карта</h2>
         <div class="map">
           <div class="address">
-            <div class="container">
+            <div class="container address__block">
               <div class="address__invitation">
                 <strong>приглашаем к сотрудничеству дилеров!</strong>
               </div>
@@ -190,8 +191,6 @@
           <div class="map__iframe">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638012513489!5m2!1sru!2sru"
-              width="600"
-              height="450"
               allowfullscreen=""
               loading="lazy"
             ></iframe>
@@ -200,32 +199,34 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="logo-text">
-        <img src="./img/svg/catenergy.svg" alt="car Energy" />
-      </div>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="" class="social__link">
-              <img src="./img/svg-icon/social/icon_vkontakte.svg" alt="vkontakte" />
-            </a>
-
-          </li>
-          <li class="social__item">
-            <a href="" class="social__link">
-              <img src="./img/svg-icon/social/icon_instagram.svg" alt="instagram" />
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="" class="social__link">
-              <img src="./img/svg-icon/social/icon_facebook.svg" alt="facebook" />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="container">
+        <div class="footer__logo-text">
+          <img src="./img/svg/catenergy.svg" alt="car Energy" />
+        </div>
+        <div class="footer__line"></div>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="./img/svg-icon/social/icon_vkontakte.svg" alt="vkontakte" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="./img/svg-icon/social/icon_instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <img src="./img/svg-icon/social/icon_facebook.svg" alt="facebook" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__line"></div>
       <div class="html-academy">
         <div class="html-academy__logo">
-          <a href="https://up.htmlacademy.ru/adaptive/24">
+          <a class="html-academy__link" target="_blank" href="https://up.htmlacademy.ru/adaptive/24">
             <p class="html-academy__slogan">HTML Academy</p>
             <img
               src="./img/svg-icon/social/htmlhtmlacademy.svg"
@@ -234,6 +235,8 @@
           </a>
         </div>
       </div>
+      </div>
+
     </footer>
   </body>
 </html>

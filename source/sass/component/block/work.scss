@@ -1,0 +1,35 @@
+.work {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.work__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.work__icon-block {
+  position: relative;
+  min-width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background: $basic_green;
+}
+
+.work__image-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.work__text {
+  font-family: $Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}

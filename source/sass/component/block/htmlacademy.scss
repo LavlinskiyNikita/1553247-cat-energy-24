@@ -1,0 +1,23 @@
+.html-academy__logo {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.html-academy__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.html-academy__slogan {
+  font-family: $Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  /* special_dark-grey */
+
+  color: #444444;
+}

@@ -1,1 +1,30 @@
 // Начните писать стили здесь
+@import "./var.scss";
+@import "./font.scss";
+
+//global file
+@import "./global/header.scss";
+@import "./global/container.scss";
+@import "./global/title.scss";
+
+//component
+@import "./component/firstscreen.scss";
+@import "./component/nowwork.scss";
+@import "./component/example.scss";
+@import "./component/map.scss";
+@import "./component/footer.scss";
+
+//block
+@import "./component/block/column.scss";
+@import "./component/block/work.scss";
+@import "./component/block/result.scss";
+@import "./component/block/social.scss";
+@import "./component/block/htmlacademy.scss";
+
+.page-body {
+  min-width: 320px;
+}
+
+.hidden-text {
+  display: none;
+}
