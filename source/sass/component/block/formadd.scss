@@ -1,0 +1,50 @@
+.form__add-text {
+  margin-bottom: 34px;
+}
+
+.castom-sheckbox-lable {
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.castom-checkbox-input {
+  display: none;
+}
+
+.castom-checkbox-input:checked + .fake::before {
+  opacity: 1;
+}
+
+.fake {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #cdcdcd;
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+}
+
+.fake::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  background: url("../../../img/svg/check.svg");
+  opacity: 0;
+  width: 18px;
+  height: 14px;
+}
+
+.castom-checkbox-text {
+  font-family: $Oswald-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: $black;
+}

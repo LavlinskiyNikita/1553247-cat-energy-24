@@ -37,139 +37,181 @@
       </div>
     </header>
     <main class="main">
-      <section class="form-section">
-        <div class="form-section__title">
-          <h1 class="title">Функциональное питание для котов</h1>
-        </div>
-        <div class="form-section__subitile">
-          <p class="form-section__text">
-            Заполните анкету, и мы подберем программу питания для вашего кота
-          </p>
-        </div>
-        <form action="get" class="form">
-          <fieldset class="form__fieldset form__name-cat">
-            <div class="form__informationin">
-              <label class="form__label-name">
-                ИМЯ:*
+      <div class="container">
+        <section class="form-section">
+          <div class="form-section__title">
+            <h1 class="title">Подбор программы</h1>
+          </div>
+          <div class="form-section__subitile">
+            <p class="form-section__text">
+              Заполните анкету, и мы подберем программу питания для вашего кота
+            </p>
+          </div>
+          <form action="get" class="form">
+            <fieldset class="form__fieldset form__name-cat">
+              <div class="form__informationin">
+                <label class="form__label-name">
+                  <div class="form__block-text">
+                    <p class="form__text">ИМЯ:*</p>
+                  </div>
+
+                  <input
+                    placeholder="барсик"
+                    type="text"
+                    name="namecat"
+                    class="form__input-text"
+                  />
+                </label>
+                <label class="form__label-name">
+                  <div class="form__block-text">
+                    <p class="form__text">Вес(кг):*</p>
+                  </div>
+                  <input
+                    placeholder="7"
+                    min="0"
+                    type="number"
+                    name="weightcat"
+                    class="form__input-text"
+                  />
+                </label>
+                <label class="form__label-name">
+                  <div class="form__block-text">
+                    <p class="form__text">Возраст(лет):</p>
+                  </div>
+                  <input
+                    min="1"
+                    placeholder="7"
+                    type="number"
+                    name="yearcat"
+                    class="form__input-text"
+                  />
+                </label>
+              </div>
+              <div class="form__radio">
+                <label class="castom-sheckbox-lable">
+                  <input
+                    type="radio"
+                    name="sweetener"
+                    id="sweetener"
+                    class="castom-radio-input"
+                  />
+                  <span class="fake-radio"></span>
+                  <span class="castom-checkbox-text">ПОХУДЕНИЕ</span>
+                </label>
+                <label class="castom-sheckbox-lable">
+                  <input
+                    type="radio"
+                    name="sweetener"
+                    id="sweetener"
+                    class="castom-radio-input"
+                  />
+                  <span class="fake-radio"></span>
+                  <span class="castom-checkbox-text"> НАБОР МАССЫ </span>
+                </label>
+                <label class="castom-sheckbox-lable">
+                  <input
+                    type="radio"
+                    name="sweetener"
+                    id="sweetener"
+                    class="castom-radio-input"
+                  />
+                  <span class="fake-radio"></span>
+                  <span class="castom-checkbox-text"
+                    >НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span
+                  >
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset form__conact">
+              <legend class="form__legend form__conact-legend">
+                Контактные данные (владельца кота)
+              </legend>
+              <div class="form__conatct-block">
+                <label class="form__contact-label form__text">
+                  E-mail:*
+                  <input
+                    placeholder="кuklachev@gmail.com"
+                    type="email"
+                    name="emailcat"
+                    class="form__inputtext form__emaile"
+                  />
+                </label>
+                <label class="form__contact-label form__text">
+                  Телефон:*
+                  <input
+                    placeholder="8 (960) 900-60-90"
+                    type="tel"
+                    name="weightcat"
+                    class="form__inputtext form__phone"
+                  />
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset form__coment">
+              <legend class="form__legend form__coment-legend">
+                Комментарий
+              </legend>
+              <textarea
+                placeholder="Расскажите обо всех повадках кота"
+                name="massenge"
+                class="form__textarea"
+              ></textarea>
+            </fieldset>
+            <fieldset class="form__fieldset form__add">
+              <legend class="form__legend form__add-text">Дополнительно</legend>
+
+              <label class="castom-sheckbox-lable">
                 <input
-                  placeholder="барсик"
-                  type="text"
-                  name="namecat"
-                  class="form__input-text"
+                  type="checkbox"
+                  name="sweetener"
+                  id="sweetener"
+                  class="castom-checkbox-input"
                 />
+                <span class="fake"></span>
+                <span class="castom-checkbox-text">питьевая вода</span>
               </label>
-              <label>
-                Вес (кг):*
+
+              <label class="castom-sheckbox-lable">
                 <input
-                  placeholder="7"
-                  min="0"
-                  type="number"
-                  name="weightcat"
-                  class="form__input-text"
+                  type="checkbox"
+                  name="sweetener"
+                  id="sweetener"
+                  class="castom-checkbox-input"
                 />
+                <span class="fake"></span>
+                <span class="castom-checkbox-text">молоко</span>
               </label>
-              <label>
-                Возраст (лет):
+
+              <label class="castom-sheckbox-lable">
                 <input
-                  min="1"
-                  placeholder="7"
-                  type="number"
-                  name="yearcat"
-                  class="form__input-text"
+                  type="checkbox"
+                  name="sweetener"
+                  id="sweetener"
+                  class="castom-checkbox-input"
                 />
+                <span class="fake"></span>
+                <span class="castom-checkbox-text">витамины</span>
               </label>
-            </div>
-            <div class="form__radio">
-              <label class="form__label-radio">
+
+              <label class="castom-sheckbox-lable">
                 <input
-                  type="radio"
-                  name="choice"
-                  id="rdio3"
-                  class="form__input-raduo"
+                  type="checkbox"
+                  name="sweetener"
+                  id="sweetener"
+                  class="castom-checkbox-input"
                 />
-                похудение
+                <span class="fake"></span>
+                <span class="castom-checkbox-text">сахарозаменитель</span>
               </label>
-              <label class="form__label-radio">
-                <input
-                  type="radio"
-                  name="choice"
-                  id="rdio1"
-                  class="form__input-raduo"
-                />
-                Набор массы
-              </label>
-              <label class="form__label-radio">
-                <input
-                  type="radio"
-                  name="choice"
-                  id="rdio2"
-                  class="form__input-raduo"
-                />
-                Не знаю (Нужен ваш совет)
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form__fieldset form__name-cat">
-            <legend class="form__legend">
-              Контактные данные (владельца кота)
-            </legend>
-            <label>
-              E-mail:*
-              <input
-                placeholder="кuklachev@gmail.com"
-                type="email"
-                name="emailcat"
-              />
-            </label>
-            <label>
-              Телефон:*
-              <input
-                placeholder="8 (960) 900-60-90"
-                type="tel"
-                name="weight cat"
-              />
-            </label>
-          </fieldset>
-          <fieldset class="form__fieldset form__name-cat">
-            <legend class="form__legend">Комментарий</legend>
-            <textarea
-              placeholder="Расскажите обо всех повадках кота"
-              name="massenge"
-              class="form__textarea"
-              cols="30"
-              rows="10"
-            >
-            </textarea>
-          </fieldset>
-          <fieldset class="form__fieldset form__name-cat">
-            <legend class="form__legend">Дополнительно</legend>
-            <label>
-              <input type="checkbox" name="sweetener" id="sweetener" />
-              сахарозаменитель
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                name="drinking-water"
-                id="drinking-water"
-              />
-              питьевая вода
-            </label>
-            <label>
-              <input type="checkbox" name="milk" id="milk" />
-              молоко
-            </label>
-            <label>
-              <input type="checkbox" name="vitamins" id="vitamins" />
-              витамины
-            </label>
-            <button class="form__button-submit" type="submit">
-              отправить заявку
-            </button>
-            <p class="form__Mandatory">* — Обязательные поля</p>
-          </fieldset>
-        </form>
-      </section>
+
+              <button class="form__button-submit" type="submit">
+                отправить заявку
+              </button>
+              <p class="form__Mandatory">* — Обязательные поля</p>
+            </fieldset>
+          </form>
+        </section>
+      </div>
 
       <section class="map-section">
         <h2 class="hidden-text">карта</h2>

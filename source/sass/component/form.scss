@@ -1,0 +1,37 @@
+.form__fieldset {
+  border: 0;
+}
+
+.form-section__title {
+  margin-top: 27px;
+  margin-bottom: 37px;
+}
+
+.form-section__subitile {
+  margin-bottom: 39px;
+}
+
+.form-section__text {
+  font-family: $Oswald-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form__legend {
+  font-family: $Oswald-Regular;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form__button-submit {
+  border: 0;
+  width: 100%;
+  padding: 7px 0;
+  background: $basic_green;
+  color: $white;
+}

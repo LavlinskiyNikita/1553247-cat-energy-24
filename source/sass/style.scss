@@ -13,6 +13,7 @@
 @import "./component/example.scss";
 @import "./component/map.scss";
 @import "./component/footer.scss";
+@import "./component/form.scss";
 
 //block
 @import "./component/block/column.scss";
@@ -20,6 +21,10 @@
 @import "./component/block/result.scss";
 @import "./component/block/social.scss";
 @import "./component/block/htmlacademy.scss";
+@import "./component/block/formnamecat.scss";
+@import "./component/block/formconact.scss";
+@import "./component/block/formcoment.scss";
+@import "./component/block/formadd.scss";
 
 .page-body {
   min-width: 320px;
