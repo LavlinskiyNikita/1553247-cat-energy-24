@@ -6,7 +6,7 @@
 }
 
 .result__item {
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special-grey;
   box-sizing: border-box;
   border-radius: 3px;
   width: 124px;
@@ -25,12 +25,12 @@
 .result__meaning {
   font-family: $Oswald-Regular;
   font-size: 24px;
-  color: #000000;
+  color: $black;
   margin-bottom: 7px;
 }
 
 .result__text {
   font-family: $Arial;
   font-size: 12px;
-  color: #444444;
+  color: $special-dark-grey;
 }

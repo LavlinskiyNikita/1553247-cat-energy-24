@@ -1,13 +1,14 @@
-//
 .column {
   box-sizing: border-box;
   padding: 15px;
   width: 100%;
-  background: $basic_grey;
+  background: $basic-grey;
   margin-bottom: 20px;
 }
 
 .column--limming {
+  position: relative;
+
   &::before {
     content: "";
     background-image: url("../../../img/svg/Vectorcar.svg");
@@ -16,34 +17,24 @@
     width: 50px;
     height: 50px;
     position: absolute;
+    top: 35px;
   }
 }
 
 .column--mass {
+  position: relative;
+
   &::before {
     content: "";
     background-image: url("../../../img/svg/Vectortigr.svg");
     background-repeat: no-repeat;
     background-position: 60% 50%;
-    left: 20px;
+    left: 0;
+    top: 35px;
     width: 67px;
     height: 50px;
     position: absolute;
   }
-}
-
-.title-card {
-  font-family: $Oswald-Regular;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: $black;
-  padding-top: 5px;
-
-  margin-left: 61px;
-  margin-bottom: 29px;
 }
 
 .column__desc {
@@ -59,7 +50,7 @@
 .column__outline {
   width: 100%;
   height: 1px;
-  background: #d9d9d9;
+  background: $basic-grey-1;
   margin-bottom: 15px;
 }
 

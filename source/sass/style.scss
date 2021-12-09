@@ -14,6 +14,7 @@
 @import "./component/map.scss";
 @import "./component/footer.scss";
 @import "./component/form.scss";
+@import "./component/shop.scss";
 
 //block
 @import "./component/block/column.scss";
@@ -25,9 +26,19 @@
 @import "./component/block/formconact.scss";
 @import "./component/block/formcoment.scss";
 @import "./component/block/formadd.scss";
+@import "./component/block/poduct.scss";
+@import "./component/block/add-product.scss";
+@import "./component/block/present-case.scss";
+@import "./component/block/title-card.scss";
 
 .page-body {
+  padding: 0;
+  margin: 0;
   min-width: 320px;
+}
+
+ul {
+  padding: 0;
 }
 
 .hidden-text {

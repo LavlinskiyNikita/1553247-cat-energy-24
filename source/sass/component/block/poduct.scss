@@ -1,0 +1,138 @@
+.poduct {
+  border-top: 1px solid $basic-grey-2;
+  padding: 20px 0;
+  margin-bottom: 25px;
+
+  &:last-child {
+    border-bottom: 1px solid $basic-grey-2;
+  }
+}
+
+.poduct__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.poduct__up {
+  width: 50%;
+}
+
+.poduct__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.poduct__information {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.poduct__name-production {
+  width: 100px;
+  margin-bottom: 18px;
+}
+
+.poduct__title-production {
+  font-family: $Oswald-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+}
+
+.poduct__table {
+  width: 100%;
+}
+
+.poduct__table-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.poduct__title-table {
+  font-family: $Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $special-dark-grey;
+}
+
+.poduct__meaning-table {
+  font-family: $Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $special-dark-grey;
+}
+
+.poduct__down {
+  text-align: center;
+}
+
+.poduct__link {
+  padding: 10px 0;
+  display: inline-block;
+  color: $white;
+  width: 100%;
+  text-decoration: none;
+  background: $basic-green;
+}
+
+.poduct__block-plus {
+  flex-direction: column;
+  text-align: center;
+}
+
+.poduct__plus-icon {
+  margin-bottom: 24px;
+}
+
+.poduct__block-descr {
+  margin-bottom: 21px;
+}
+
+.poduct__block-title {
+  margin-bottom: 8px;
+  font-family: $Oswald-Medium;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.poduct__block-text {
+  font-family: $Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
+
+.poduct__link-plus {
+  text-decoration: none;
+  padding: 10px 0;
+  display: inline-block;
+  background: $gray;
+  width: 100%;
+
+  font-family: $Oswald-Medium;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}

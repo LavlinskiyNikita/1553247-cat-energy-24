@@ -18,20 +18,33 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .form__legend {
+  width: 100%;
+  display: block;
+  position: relative;
   font-family: $Oswald-Regular;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+    background: $basic-green;
+  }
 }
 
 .form__button-submit {
   border: 0;
   width: 100%;
   padding: 7px 0;
-  background: $basic_green;
+  background: $basic-green;
   color: $white;
 }

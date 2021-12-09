@@ -1,6 +1,6 @@
 .form__name-cat {
   margin-bottom: 20px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $basic-grey-1;
 }
 
 .form__informationin {
@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 27px;
-  border-bottom: 1px solid $basic_grey-1;
+  border-bottom: 1px solid $basic-grey-1;
 }
 
 .form__label-name {
@@ -27,13 +27,13 @@
 .form__text {
   font-family: $Oswald-Medium;
   font-size: 16px;
-  color: #444444;
+  color: $special-dark-grey;
 }
 
 .form__input-text {
   padding: 3px 15px;
   border-radius: 0;
-  border: 1px solid $basic_grey;
+  border: 1px solid $basic-grey;
   height: 85%;
   width: 100%;
 }
@@ -45,7 +45,13 @@
   flex-direction: column;
 }
 
-.form__label-radio {
+.form__castom-radio-lable {
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.form__castom-radio-span {
   font-family: $Oswald-Regular;
   font-style: normal;
   font-weight: normal;
@@ -55,32 +61,32 @@
   color: $special_dark-grey-2;
 }
 
-.castom-radio-input {
+.form__castom-radio-input {
   display: none;
 }
 
-.castom-radio-input:checked + .fake-radio::before {
+.form__castom-radio-input:checked + .form__castom-radio::before {
   opacity: 1;
 }
 
-.fake-radio {
+.form__castom-radio {
   position: relative;
   display: inline-block;
   border-radius: 50%;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special-grey;
   width: 30px;
   height: 30px;
   margin-right: 15px;
 }
 
-.fake-radio::before {
+.form__castom-radio::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
-  background: $basic_green;
+  background: $basic-green;
   opacity: 0;
   transition: opaity 1s;
   width: 13px;

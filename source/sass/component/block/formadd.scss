@@ -1,44 +1,44 @@
-.form__add-text {
+.form__legend--title {
   margin-bottom: 34px;
 }
 
-.castom-sheckbox-lable {
+.form__castom-sheckbox-lable {
   margin-bottom: 13px;
   display: flex;
   align-items: center;
 }
 
-.castom-checkbox-input {
+.form__castom-checkbox-input {
   display: none;
 }
 
-.castom-checkbox-input:checked + .fake::before {
+.form__castom-checkbox-input:checked + .form__castom-checkbox::before {
   opacity: 1;
 }
 
-.fake {
+.form__castom-checkbox {
   position: relative;
   display: inline-block;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special-grey;
   width: 30px;
   height: 30px;
   margin-right: 16px;
 }
 
-.fake::before {
+.form__castom-checkbox::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
-  background: url("../../../img/svg/check.svg");
+  background: url("../img/svg/check.svg");
   opacity: 0;
   width: 18px;
   height: 14px;
 }
 
-.castom-checkbox-text {
+.form__castom-checkbox-span {
   font-family: $Oswald-Regular;
   font-style: normal;
   font-weight: normal;
