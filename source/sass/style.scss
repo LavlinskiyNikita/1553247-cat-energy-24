@@ -17,6 +17,7 @@
 @import "./component/shop.scss";
 
 //block
+@import "./component/block/menu.scss";
 @import "./component/block/column.scss";
 @import "./component/block/work.scss";
 @import "./component/block/result.scss";
@@ -26,10 +27,10 @@
 @import "./component/block/formconact.scss";
 @import "./component/block/formcoment.scss";
 @import "./component/block/formadd.scss";
-@import "./component/block/poduct.scss";
+@import "./component/block/product.scss";
 @import "./component/block/add-product.scss";
 @import "./component/block/present-case.scss";
-@import "./component/block/title-card.scss";
+@import "./component/block/humburger.scss";
 
 .page-body {
   padding: 0;

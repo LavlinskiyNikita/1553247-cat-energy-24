@@ -1,4 +1,4 @@
-.poduct {
+.product {
   border-top: 1px solid $basic-grey-2;
   padding: 20px 0;
   margin-bottom: 25px;
@@ -8,35 +8,35 @@
   }
 }
 
-.poduct__block {
+.product__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 22px;
 }
 
-.poduct__up {
+.product__up {
   width: 50%;
 }
 
-.poduct__image {
+.product__image {
   display: block;
   margin: 0 auto;
 }
 
-.poduct__information {
+.product__information {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.poduct__name-production {
+.product__name-production {
   width: 100px;
   margin-bottom: 18px;
 }
 
-.poduct__title-production {
-  font-family: $Oswald-Regular;
+.product__title-production {
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -45,18 +45,18 @@
   color: $special-dark-grey-2;
 }
 
-.poduct__table {
+.product__table {
   width: 100%;
 }
 
-.poduct__table-list {
+.product__table-list {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.poduct__title-table {
-  font-family: $Arial;
+.product__title-table {
+  font-family: $descr-font;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -65,8 +65,8 @@
   color: $special-dark-grey;
 }
 
-.poduct__meaning-table {
-  font-family: $Arial;
+.product__meaning-table {
+  font-family: $descr-font;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -75,11 +75,11 @@
   color: $special-dark-grey;
 }
 
-.poduct__down {
+.product__down {
   text-align: center;
 }
 
-.poduct__link {
+.product__link {
   padding: 10px 0;
   display: inline-block;
   color: $white;
@@ -88,22 +88,22 @@
   background: $basic-green;
 }
 
-.poduct__block-plus {
+.product__block-plus {
   flex-direction: column;
   text-align: center;
 }
 
-.poduct__plus-icon {
+.product__plus-icon {
   margin-bottom: 24px;
 }
 
-.poduct__block-descr {
+.product__block-descr {
   margin-bottom: 21px;
 }
 
-.poduct__block-title {
+.product__block-title {
   margin-bottom: 8px;
-  font-family: $Oswald-Medium;
+  font-family: $header-link;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -112,8 +112,8 @@
   color: #111111;
 }
 
-.poduct__block-text {
-  font-family: $Arial;
+.product__block-text {
+  font-family: $descr-font;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -121,14 +121,14 @@
   color: $special-dark-grey;
 }
 
-.poduct__link-plus {
+.product__link-plus {
   text-decoration: none;
   padding: 10px 0;
   display: inline-block;
   background: $gray;
   width: 100%;
 
-  font-family: $Oswald-Medium;
+  font-family: $header-link;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

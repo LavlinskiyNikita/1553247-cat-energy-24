@@ -25,7 +25,7 @@
 }
 
 .form__text {
-  font-family: $Oswald-Medium;
+  font-family: $header-link;
   font-size: 16px;
   color: $special-dark-grey;
 }
@@ -45,14 +45,14 @@
   flex-direction: column;
 }
 
-.form__castom-radio-lable {
+.form__custom-radio-label {
   margin-bottom: 13px;
   display: flex;
   align-items: center;
 }
 
-.form__castom-radio-span {
-  font-family: $Oswald-Regular;
+.form__custom-radio-span {
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -61,15 +61,15 @@
   color: $special_dark-grey-2;
 }
 
-.form__castom-radio-input {
+.form__custom-radio-input {
   display: none;
 }
 
-.form__castom-radio-input:checked + .form__castom-radio::before {
+.form__custom-radio-input:checked + .form__custom-radio::before {
   opacity: 1;
 }
 
-.form__castom-radio {
+.form__custom-radio {
   position: relative;
   display: inline-block;
   border-radius: 50%;
@@ -79,7 +79,7 @@
   margin-right: 15px;
 }
 
-.form__castom-radio::before {
+.form__custom-radio::before {
   content: "";
   position: absolute;
   top: 50%;

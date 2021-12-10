@@ -7,7 +7,7 @@
 
 .address__invitation {
   max-width: 140px;
-  font-family: $Oswald-Regular;
+  font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -20,7 +20,7 @@
 }
 
 .address__text {
-  font-family: $Arial;
+  font-family: $descr-font;
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;

@@ -11,7 +11,7 @@
 
   &::before {
     content: "";
-    background-image: url("../../../img/svg/Vectorcar.svg");
+    background-image: url("../img/svg/vectorcar.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     width: 50px;
@@ -26,7 +26,7 @@
 
   &::before {
     content: "";
-    background-image: url("../../../img/svg/Vectortigr.svg");
+    background-image: url("../img/svg/vectortigr.svg");
     background-repeat: no-repeat;
     background-position: 60% 50%;
     left: 0;
@@ -37,8 +37,22 @@
   }
 }
 
+.column__title-card {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+  padding-top: 5px;
+
+  margin-left: 61px;
+  margin-bottom: 29px;
+}
+
 .column__desc {
-  font-family: $Arial;
+  font-family: $descr-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -55,7 +69,7 @@
 }
 
 .column__link {
-  font-family: $Oswald-Regular;
+  font-family: $main-font;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
@@ -64,7 +78,7 @@
 
   &::after {
     content: "";
-    background-image: url("../../img/svg/icon_arrow.svg");
+    background-image: url("../img/svg/icon_arrow.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     position: absolute;

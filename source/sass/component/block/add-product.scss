@@ -6,7 +6,7 @@
 
 .additional-goods__titel-text {
   position: relative;
-  font-family: $Oswald-Regular;
+  font-family: $main-font;
   background: $white;
   padding-right: 10px;
   font-size: 24px;
@@ -40,7 +40,7 @@
 }
 
 .add-product__title {
-  font-family: $Oswald-Regular;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -54,7 +54,7 @@
 
   margin-bottom: 15px;
 
-  font-family: $Arial;
+  font-family: $descr-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -70,7 +70,7 @@
   text-align: center;
   background: $basic-green;
 
-  font-family: $Oswald-Medium;
+  font-family: $header-link;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
