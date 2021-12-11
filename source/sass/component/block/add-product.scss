@@ -1,0 +1,82 @@
+.additional-goods__title {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 36px;
+}
+
+.additional-goods__titel-text {
+  position: relative;
+  font-family: $main-font;
+  background: $white;
+  padding-right: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    right: -20px;
+    top: 50%;
+    background: $basic-green;
+  }
+}
+
+.add-product__card {
+  border-top: 1px solid $special-grey;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  width: 100%;
+
+  &:last-child {
+    border-bottom: 1px solid $special-grey;
+  }
+}
+
+.add-product__name {
+  margin-bottom: 13px;
+}
+
+.add-product__title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.add-product__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+
+  font-family: $descr-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-dark-grey;
+}
+
+.add-product__button {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  background: $basic-green;
+
+  font-family: $header-link;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $white;
+}

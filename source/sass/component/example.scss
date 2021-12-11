@@ -1,0 +1,59 @@
+.example-section {
+  background: #eaeaea;
+  padding-bottom: 40px;
+}
+
+.example__title {
+  margin-bottom: 40px;
+}
+
+.example__text {
+  font-family: $descr-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
+.example__spending {
+  margin-bottom: 40px;
+}
+
+.example__text-price {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.example__slider {
+  position: relative;
+  text-align: center;
+}
+
+.example__range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__block-range {
+  margin: 0 13px;
+}
+
+.example__button {
+  background: transparent;
+  border: 0;
+  padding: 8px 6px;
+
+  font-family: $main-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: $black;
+}

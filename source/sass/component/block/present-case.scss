@@ -1,0 +1,20 @@
+.present-case {
+  margin-top: 35px;
+  text-decoration: none;
+  background: url("../img/Rectangle17.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 290px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-bottom: 43px;
+  padding-top: 59px;
+}
+
+.present-case__ggg {
+  color: $white;
+}
