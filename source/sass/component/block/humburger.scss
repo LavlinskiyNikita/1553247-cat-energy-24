@@ -28,3 +28,9 @@
     bottom: 0;
   }
 }
+
+@media (min-width: 768px) {
+  .humburger {
+    display: none;
+  }
+}

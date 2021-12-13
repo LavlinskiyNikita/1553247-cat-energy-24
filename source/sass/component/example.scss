@@ -1,5 +1,5 @@
 .example-section {
-  background: #eaeaea;
+  background: $basic-grey-3;
   padding-bottom: 40px;
 }
 
@@ -43,6 +43,9 @@
 
 .example__block-range {
   margin: 0 13px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__button {
@@ -56,4 +59,40 @@
   cursor: pointer;
 
   color: $black;
+}
+
+@media (min-width: 768px) {
+  .example-section {
+    background: none;
+    padding-bottom: 0;
+  }
+
+  .example__text {
+    font-family: $descr-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $special-dark-grey;
+  }
+
+  .example__slider {
+    padding-bottom: 58px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      bottom: 0;
+      z-index: -1;
+      width: calc(100% + 50px);
+      height: 420px;
+      background: $basic-grey-3;
+    }
+  }
+
+  .example__block-range {
+    width: 100%;
+  }
 }

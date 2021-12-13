@@ -29,7 +29,6 @@
     background-image: url("../img/svg/vectortigr.svg");
     background-repeat: no-repeat;
     background-position: 60% 50%;
-    left: 0;
     top: 35px;
     width: 67px;
     height: 50px;
@@ -47,7 +46,7 @@
   color: $black;
   padding-top: 5px;
 
-  margin-left: 61px;
+  margin-left: 70px;
   margin-bottom: 29px;
 }
 
@@ -87,5 +86,185 @@
     height: 10px;
     margin-top: 2px;
     margin-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .column {
+    box-sizing: border-box;
+    padding: 77px 62px 53px 52px;
+    width: 100%;
+    background: $basic-grey;
+    margin-bottom: 20px;
+  }
+
+  .column--limming {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../img/svg/vectorcar_x2.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      width: 200px;
+      height: 211px;
+      position: absolute;
+      top: 50%;
+      right: 62px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .column--mass {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../img/svg/vectortigr_x2.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      width: 268px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      right: 62px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .column__title-card {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    /* identical to box height, or 100% */
+
+    text-transform: uppercase;
+    color: $black;
+    padding-top: 5px;
+
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .column__text {
+    margin-bottom: 48px;
+  }
+
+  .column__desc {
+    width: calc(100% - 290px);
+    font-family: $descr-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $special_dark-grey;
+    margin-bottom: 23px;
+  }
+
+  .column__outline {
+    width: 0;
+    height: 0;
+    background: none;
+    margin-bottom: 0;
+  }
+
+  .column__link {
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black;
+
+    &::after {
+      content: "";
+      background-image: url("../img/svg/icon_arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      position: absolute;
+      display: inline-block;
+      width: 32px;
+      height: 10px;
+      margin-top: 6px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .column {
+    box-sizing: border-box;
+    padding: 45px 52px;
+    width: 570px;
+    background: $basic-grey;
+    margin-bottom: 20px;
+  }
+
+  .column--limming {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../img/svg/cat_back.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      width: 100px;
+      height: 106px;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      left: 52px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .column--mass {
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../img/svg/cat_noback.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      width: 150px;
+      height: 106px;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      left: 22px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .column__title-card {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: $black;
+    padding-top: 5px;
+
+    margin-left: 134px;
+    margin-bottom: 73px;
+  }
+
+  .column__text {
+    margin-bottom: 27px;
+  }
+
+  .column__desc {
+    width: 100%;
+    font-family: $descr-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $special_dark-grey;
+    margin-bottom: 23px;
   }
 }
