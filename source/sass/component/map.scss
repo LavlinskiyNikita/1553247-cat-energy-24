@@ -49,4 +49,52 @@
     line-height: 20px;
     color: $special_dark-grey;
   }
+
+  .map__iframe {
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .map {
+    position: relative;
+  }
+
+  .address__block {
+    padding: 0;
+  }
+
+  .address__content {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 565px;
+    padding: 56px 80px;
+    height: 198px;
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+  }
+
+  .address__invitation {
+    line-height: 26px;
+  }
+
+  .address__text {
+    margin: 0;
+  }
+
+  .map__iframe {
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 400px;
+      z-index: -1;
+    }
+  }
 }

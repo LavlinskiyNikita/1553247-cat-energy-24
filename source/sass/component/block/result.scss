@@ -100,3 +100,43 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: 1440px) {
+  .result__bloclk-main {
+    list-style: none;
+    display: flex;
+    align-items: 0;
+    flex-direction: column;
+    justify-content: 0;
+    margin-bottom: 40px;
+    margin-top: 400px;
+  }
+
+  .result__spending {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .example__descr {
+    position: absolute;
+    top: 250px;
+  }
+
+  .result__item {
+    background: $basic-grey-3;
+  }
+
+  .result__block {
+    background: $basic-grey-3;
+  }
+
+  .result__text-price {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
