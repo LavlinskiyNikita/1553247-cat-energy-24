@@ -127,6 +127,12 @@
 }
 
 @media (min-width: 1440px) {
+  .work {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .work__item {
     position: relative;
     display: block;
