@@ -5,3 +5,23 @@
   font-size: 36px;
   color: $black;
 }
+
+@media (min-width: 768px) {
+  .title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

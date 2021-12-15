@@ -11,5 +11,19 @@
 .footer__line {
   width: 100%;
   height: 1px;
-  background: #9d9d9d;
+  background: $basic-grey-1;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__line {
+    width: 0;
+    height: 0;
+    background: none;
+  }
 }
