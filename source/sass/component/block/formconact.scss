@@ -52,3 +52,12 @@
     padding: 0 15px;
   }
 }
+
+@media (min-width: 1440px) {
+  .form__conatct-block {
+    margin-bottom: 23px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
+}
