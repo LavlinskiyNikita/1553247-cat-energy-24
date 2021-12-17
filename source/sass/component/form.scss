@@ -48,3 +48,21 @@
   background: $basic-green;
   color: $white;
 }
+
+@media (min-width: 768px) {
+  .form-section__title {
+    padding: 0 39px;
+    margin-top: 64px;
+    margin-bottom: 54px;
+  }
+
+  .form-section__subitile {
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-bottom: 39px;
+  }
+
+  .form {
+    padding: 0 39px;
+  }
+}

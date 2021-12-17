@@ -13,3 +13,22 @@
   width: 100%;
   min-height: 150px;
 }
+
+@media (min-width: 768px) {
+  .form__textarea {
+    border-radius: 0;
+    border: 1px solid $basic-grey;
+    resize: none;
+    width: 100%;
+    min-height: 174px;
+    padding: 10px 19px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+  }
+}
