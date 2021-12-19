@@ -16,6 +16,7 @@
 @import "./component/form.scss";
 @import "./component/shop.scss";
 @import "./component/weight-loss.scss";
+@import "./component/products.scss";
 
 //block
 @import "./component/block/menu.scss";
@@ -32,6 +33,9 @@
 @import "./component/block/add-product.scss";
 @import "./component/block/present-case.scss";
 @import "./component/block/humburger.scss";
+@import "./component/block/additional-goods.scss";
+@import "./component/block/add-product-conent.scss";
+@import "./component/block/product-btn.scss";
 
 .page-body {
   padding: 0;

@@ -85,6 +85,26 @@
     padding-right: 39px;
     margin-bottom: 39px;
   }
+
+  .form__legend {
+    width: 100%;
+    display: block;
+    position: relative;
+    font-family: $main-font;
+    font-size: 36px;
+    line-height: 26px;
+    color: $black;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      width: 40%;
+      height: 2px;
+      background: $basic-green;
+    }
+  }
 }
 
 @media (min-width: 1440px) {

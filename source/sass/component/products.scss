@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  .products {
+    width: 708px;
+    margin: 0 auto;
+    padding-top: 82px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .products {
+    width: 100%;
+    display: grid;
+    grid-column-gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

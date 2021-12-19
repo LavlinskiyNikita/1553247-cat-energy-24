@@ -2,6 +2,7 @@
   margin-top: 35px;
   text-decoration: none;
   background: url("../img/Rectangle17.png");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -17,4 +18,50 @@
 
 .present-case__ggg {
   color: $white;
+}
+
+@media (min-width: 768px) {
+  .present-case {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: url("../img/group2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 120px;
+  }
+
+  .present-case__text {
+    width: 160px;
+    text-align: left;
+  }
+
+  .present-case__ggg {
+    font-family: $descr-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+  }
+}
+
+@media (min-width: 1440px) {
+  .present-case {
+    box-sizing: border-box;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../../../img/Rectangle17.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    height: 100%;
+  }
+
+  .present-case__text {
+    width: 160px;
+    text-align: center;
+  }
 }

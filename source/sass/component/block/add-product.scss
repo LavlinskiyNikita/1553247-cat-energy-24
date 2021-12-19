@@ -4,26 +4,6 @@
   margin-bottom: 36px;
 }
 
-.additional-goods__titel-text {
-  position: relative;
-  font-family: $main-font;
-  background: $white;
-  padding-right: 10px;
-  font-size: 24px;
-  line-height: 24px;
-  color: $black;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 20%;
-    height: 2px;
-    right: -20px;
-    top: 50%;
-    background: $basic-green;
-  }
-}
-
 .add-product__card {
   border-top: 1px solid $special-grey;
   padding-top: 13px;
@@ -79,4 +59,64 @@
   text-decoration: none;
 
   color: $white;
+}
+
+@media (min-width: 768px) {
+  .add-product__name-price {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .add-product__price-text {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .add-product {
+    grid-column: span 3;
+  }
+
+  .add-product__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .add-product__name-price {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .add-product__name {
+    margin-bottom: 0;
+  }
+
+  .add-product__title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $special-dark-grey-2;
+  }
+
+  .add-product__description {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .add-product__button {
+    display: block;
+    box-sizing: border-box;
+    width: 244px;
+    height: 40px;
+    margin-left: 38px;
+  }
 }
