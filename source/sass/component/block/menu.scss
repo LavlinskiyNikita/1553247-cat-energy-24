@@ -80,6 +80,10 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $black;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   .menu__link--current {
