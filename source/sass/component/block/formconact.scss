@@ -24,3 +24,40 @@
   border: 1px solid $special-grey;
   padding: 0 15px;
 }
+
+@media (min-width: 768px) {
+  .form__contact-label {
+    width: 100%;
+    height: 52px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+  }
+
+  .form__inputtext {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    margin-left: 13px;
+    border: 1px solid $special-grey;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form__conatct-block {
+    margin-bottom: 23px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
+}
