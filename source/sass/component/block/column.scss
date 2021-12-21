@@ -87,6 +87,10 @@
     margin-top: 2px;
     margin-left: 15px;
   }
+
+  &:hover {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {

@@ -98,6 +98,15 @@
     text-align: center;
     text-decoration: none;
     font-family: $header-link;
+
+    &:hover {
+      background: $basic-green-2;
+    }
+
+    &:active {
+      background: $basic-green-2;
+      color: #ffffff4d;
+    }
   }
 }
 
