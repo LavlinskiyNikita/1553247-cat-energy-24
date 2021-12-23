@@ -32,3 +32,9 @@
     color: $special-dark-grey;
   }
 }
+
+@media (min-width: 1440px) {
+  .form__coment-legend {
+    margin-bottom: 76px;
+  }
+}

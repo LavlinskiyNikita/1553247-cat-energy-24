@@ -125,6 +125,33 @@
     margin-bottom: 39px;
   }
 
+  .form__legend {
+    width: 100%;
+    display: block;
+    position: relative;
+    font-family: $main-font;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 76px;
+    color: $black;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 100%;
+      z-index: -1;
+      height: 2px;
+      background: $basic-green;
+    }
+  }
+
+  .form__legend-span {
+    background: $white;
+    padding: 5px 10px;
+  }
+
   .form__button-submit {
     border: 0;
     width: 100%;

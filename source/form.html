@@ -88,68 +88,56 @@
                 </label>
               </div>
               <div class="form__radio">
-                <label class="form__custom-radio-label">
-                  <input
+                  <div class="form__custom-radio-block">
+                    <input
                     type="radio"
-                    name="sweetener"
-                    id="sweetener"
+                    name="choice"
+                    id="slimming"
                     class="form__custom-radio-input"
-                  />
-                  <span class="form__custom-radio"></span>
-                  <span class="form__custom-radio-span">ПОХУДЕНИЕ</span>
-                </label>
-                <label class="form__custom-radio-label">
-                  <input
+                    checked
+                    />
+                    <label for="slimming" class="form__custom-radio">ПОХУДЕНИЕ</label>
+                  </div>
+                  <div class="form__custom-radio-block">
+                    <input
                     type="radio"
-                    name="sweetener"
-                    id="sweetener"
+                    name="choice"
+                    id="masses"
                     class="form__custom-radio-input"
-                  />
-                  <span class="form__custom-radio"></span>
-                  <span class="form__custom-radio-span">Набор массы</span>
-                </label>
-                <label class="form__custom-radio-label">
-                  <input
+                    />
+                    <label for="masses" class="form__custom-radio">Набор массы</label>
+                  </div>
+                  <div class="form__custom-radio-block">
+                    <input
                     type="radio"
-                    name="sweetener"
-                    id="sweetener"
+                    name="choice"
+                    id="know"
                     class="form__custom-radio-input"
-                  />
-                  <span class="form__custom-radio"></span>
-                  <span class="form__custom-radio-span"
-                    >Не знаю (Нужен ваш совет)</span
-                  >
-                </label>
+                    />
+                    <label for="know" class="form__custom-radio">Не знаю (Нужен ваш совет)</label>
+                  </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__conact">
               <legend class="form__legend form__conact-legend">
-                Контактные данные (владельца кота)
+                <span class="form__legend-span">Контактные данные (владельца кота)</span>
               </legend>
               <div class="form__conatct-block">
-                <label class="form__contact-label form__text">
-                  E-mail:*
-                  <input
-                    placeholder="кuklachev@gmail.com"
-                    type="email"
-                    name="emailcat"
-                    class="form__inputtext form__emaile"
-                  />
-                </label>
-                <label class="form__contact-label form__text">
-                  Телефон:*
-                  <input
-                    placeholder="8 (960) 900-60-90"
-                    type="tel"
-                    name="weightcat"
-                    class="form__inputtext form__phone"
-                  />
-                </label>
+                <div class="form__email-block form__block">
+                  <span class="form__span-text">E-mail:*</span>
+                  <input class="form__input-content form__email-input" id="emailForm" type="email" placeholder="кuklachev@gmail.com">
+                  <label class="form__label-content form__email-label" for="emailForm"></label>
+                </div>
+                <div class="form__email-block form__block">
+                  <span class="form__span-text">Телефон:*</span>
+                  <input class="form__input-content form__phone-input" id="phoneForm" type="number" min="10" max="13" placeholder="8 (960) 900-60-90">
+                  <label class="form__label-content form__phone-label" for="phoneForm"></label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__coment">
               <legend class="form__legend form__coment-legend">
-                Комментарий
+               <span class="form__legend-span">Комментарий</span>
               </legend>
               <textarea
                 placeholder="Расскажите обо всех повадках кота"
@@ -159,7 +147,7 @@
             </fieldset>
             <fieldset class="form__fieldset form__add">
               <legend class="form__legend form__legend--title">
-                Дополнительно
+                <sapn class="form__legend-span">Дополнительно</sapn>
               </legend>
               <div class="form__checkbox">
                 <label class="form__custom-checkbox-label">
@@ -168,6 +156,7 @@
                     name="sweetener"
                     id="sweetener"
                     class="form__custom-checkbox-input"
+                    checked
                   />
                   <span class="form__custom-checkbox"></span>
                   <span class="form__custom-checkbox-span"
