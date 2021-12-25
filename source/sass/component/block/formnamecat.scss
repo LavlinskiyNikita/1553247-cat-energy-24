@@ -118,7 +118,7 @@
   opacity: 1;
 }
 
-.form__custom-radio-input:focus + .form__custom-radio {
+.form__custom-radio-input:focus + .form__custom-radio::before {
   border: 2px solid $black;
 }
 
