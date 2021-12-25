@@ -30,6 +30,7 @@
     background-repeat: no-repeat;
     background-position: 60% 50%;
     top: 35px;
+    left: 4px;
     width: 67px;
     height: 50px;
     position: absolute;
@@ -68,6 +69,7 @@
 }
 
 .column__link {
+  text-decoration: none;
   font-family: $main-font;
   font-size: 16px;
   line-height: 16px;
