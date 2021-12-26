@@ -7,6 +7,7 @@
 }
 
 .form__textarea {
+  box-sizing: border-box;
   border-radius: 0;
   border: 1px solid $basic-grey;
   resize: none;
@@ -30,5 +31,11 @@
     line-height: 30px;
     text-transform: uppercase;
     color: $special-dark-grey;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form__coment-legend {
+    margin-bottom: 76px;
   }
 }

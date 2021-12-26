@@ -33,9 +33,24 @@
 .form__input-text {
   padding: 3px 15px;
   border-radius: 0;
-  border: 1px solid $basic-grey;
+  font-size: 16px;
+  border: 1px solid $basic-grey-4;
   height: 85%;
   width: 100%;
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    outline: none;
+    box-sizing: 0;
+    border: 2px solid $black;
+  }
+
+  &:invalid {
+    border: 2px solid $status_error;
+  }
 }
 
 .form__radio {
@@ -46,74 +61,87 @@
   border-top: 1px solid $basic-grey-1;
 }
 
-.form__custom-radio-label {
-  margin-bottom: 13px;
+.form__custom-radio-block {
   display: flex;
   align-items: center;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  margin-bottom: 30px;
 }
 
-.form__custom-radio-span {
+.form__custom-radio-input {
+  appearance: none;
+  position: absolute;
+  left: -200px;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form__custom-radio {
+  padding: 0 0 0 60px;
+  position: relative;
+  cursor: pointer;
+
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
-  color: $special_dark-grey-2;
-}
-
-.form__custom-radio-input {
-  display: none;
-}
-
-.form__custom-radio-input:checked + .form__custom-radio::before {
-  opacity: 1;
-}
-
-.form__custom-radio {
-  position: relative;
-  display: inline-block;
-  border-radius: 50%;
-  border: 1px solid $special-grey;
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
+  color: $special-dark-grey-2;
 }
 
 .form__custom-radio::before {
   content: "";
+  box-sizing: border-box;
+  display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  background: $basic-green;
-  opacity: 0;
-  transition: opaity 1s;
-  width: 13px;
-  height: 13px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  margin: -3px 20px;
+  margin-right: 16px;
+  margin-left: 0;
+  padding: 11px;
   border-radius: 50%;
+  background: none;
+  border: 1px solid $basic-grey-2;
+}
+
+.form__custom-radio::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  background: $basic-green-2;
+  top: 8px;
+  left: 11px;
+  opacity: 0;
+}
+
+.form__custom-radio-input:checked + .form__custom-radio::after {
+  opacity: 1;
+}
+
+.form__custom-radio-input:focus + .form__custom-radio::before {
+  border: 2px solid $black;
 }
 
 @media (min-width: 768px) {
   .form__name-cat {
-    margin-bottom: 20px;
-    border-bottom: none;
+    border: 0;
   }
 
   .form__radio {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 28px;
-    display: flex;
-    flex-direction: column;
-    border-top: none;
+    border-top: 0;
+  }
 
-    border: 1px solid $basic-grey-1;
+  .form__input-text {
+    font-size: 20px;
+    padding: 3px 18px;
+  }
+
+  .form__custom-radio {
+    font-size: 20px;
   }
 }
 
@@ -122,6 +150,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 80px;
+    border: 0;
   }
 
   .form__informationin {

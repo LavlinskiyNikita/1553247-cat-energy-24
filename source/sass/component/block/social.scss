@@ -6,6 +6,20 @@
   align-items: center;
 }
 
+.social__item {
+  svg {
+    fill: none;
+  }
+
+  &:hover {
+    stroke: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .social__link {
   display: inline-block;
   padding: 18px;
