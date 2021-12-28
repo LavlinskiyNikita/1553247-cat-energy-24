@@ -10,9 +10,11 @@
     <header class="header header--cat">
       <div class="container">
         <nav class="menu">
-            <a class="logo-link">
-              <img src="./img/svg/logo.svg" alt="car Energy" />
-            </a>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/svg/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/svg/logo/logo-tablet.svg">
+            <img src="./img/svg/logo/logo-phone.svg" alt="car Energy">
+          </picture>
             <a class="logo-text">
               <img src="./img/svg/catenergy.svg" alt="car Energy" />
             </a>
@@ -43,7 +45,9 @@
           </div>
             <p class="first-screen__text">Занялся собой? Займись котом!</p>
           <picture class="first-screen__image">
-            <img src="./img/index-can-mobile1.png" alt="tavar" />
+            <source media="(min-width: 1440px)" srcset="./img/index-can/index-can.png 1x, ./img/index-can/index-can@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/index-can/index-can-tablet.png 1x, ./img/index-can/index-can-tablet@2x.png 2x">
+            <img src="./img/index-can/index-can-mobile.png" alt="tavar" srcset="./img/index-can/index-can-mobile@2x.png 2x"/>
           </picture>
           <a href="./form.html" class="first-screen__link">подобрать программу</a>
         </div>
@@ -160,16 +164,20 @@
                 <div class="example__slider">
                   <div class="example__image-slider">
                     <div class="example__image--after">
+                      <picture>
+                        <source media="(min-width: 1440px)" srcset="./img/sliders/image_cat_tablet.png 1x, ./img/sliders/image_cat_tablet@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="./img/sliders/image_cat_tablet.png 1x, ./img/sliders/image_cat_tablet@2x.png 2x">
+                        <img src="./img/sliders/before-mobile.png" alt="cat" srcset="./img/sliders/before-mobile@2x.png 2x"/>
+                      </picture>
                     </div>
                     <div class="example__image--before">
-                      <img src="./img/before-mobile.png" alt="cat" />
                     </div>
                   </div>
                   <div class="example__range">
                     <button class="example__button">было</button>
-                  <div class="example__block-range">
-                    <input class="example__slider-range" type="range" min="0" max="100" value="50" step="1" />
-                  </div>
+                    <div class="example__block-range">
+                      <input class="example__slider-range" type="range" min="0" max="100" value="50" step="1" />
+                    </div>
                     <button class="example__button">стало</button>
                   </div>
                 </div>
