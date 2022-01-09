@@ -7,7 +7,7 @@
 }
 
 .menu__list {
-  display: block;
+  display: none;
   list-style: none;
   position: absolute;
   top: 26px;
@@ -43,6 +43,7 @@
 @media (min-width: 768px) {
   .logo-text {
     margin-right: auto;
+    margin-left: 12px;
   }
 
   .logo-link {
@@ -56,10 +57,12 @@
     top: 0;
     left: 0;
     width: auto;
+    padding: 0;
+    padding-right: 9px;
   }
 
   .menu__item {
-    margin-left: 36px;
+    margin-left: 28px;
     border: 0;
 
     &:last-child {
@@ -92,6 +95,10 @@
 }
 
 @media (min-width: 1440px) {
+  .logo-text {
+    margin-left: 14px;
+  }
+
   .menu__list {
     margin: 0;
     display: flex;

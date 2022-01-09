@@ -5,16 +5,18 @@
 .form__checkbox {
   display: flex;
   flex-direction: column;
-  margin-bottom: 43px;
+  margin-bottom: 27px;
 }
 
 .form__custom-checkbox-label {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
 .form__custom-checkbox-input {
+  position: absolute;
+  left: -1000000000000px;
   appearance: none;
 }
 
@@ -59,15 +61,19 @@
 }
 
 @media (min-width: 768px) {
+  .form__legend--title {
+    margin-bottom: 61px;
+  }
+
   .form__checkbox {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
-    margin-bottom: 43px;
+    grid-column-gap: 45px;
+    margin-bottom: 51px;
   }
 
   .form__custom-checkbox-label {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
 
@@ -83,7 +89,7 @@
     border: 1px solid $special-grey;
     width: 40px;
     height: 40px;
-    margin-right: 32px;
+    margin-right: 17px;
   }
 
   .form__custom-checkbox::before {
@@ -122,7 +128,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 80px;
-    margin-bottom: 43px;
+    margin-bottom: 58px;
 
     .form__custom-checkbox-label {
       margin-bottom: 0;

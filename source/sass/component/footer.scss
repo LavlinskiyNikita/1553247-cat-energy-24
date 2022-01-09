@@ -3,7 +3,7 @@
 }
 
 .footer__logo-text {
-  padding-top: 39px;
+  padding-top: 38px;
   padding-bottom: 32px;
   text-align: center;
 
@@ -24,9 +24,16 @@
 
 @media (min-width: 768px) {
   .footer__container {
+    padding-top: 43px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+  }
+
+  .footer__logo-text {
+    padding: 0;
   }
 
   .footer__line {

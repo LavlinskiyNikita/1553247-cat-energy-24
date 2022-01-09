@@ -3,6 +3,7 @@
 }
 
 .additional-goods__title-text {
+  margin: 0;
   position: relative;
   font-family: $main-font;
   background: $white;
@@ -24,10 +25,11 @@
 
 @media (min-width: 768px) {
   .additional-goods {
-    margin-bottom: 70px;
+    margin-bottom: 85px;
   }
 
   .additional-goods__title-text {
+    padding-left: 47px;
     font-size: 36px;
   }
 }
@@ -38,6 +40,7 @@
   }
 
   .additional-goods__title-text {
+    padding-left: 0;
     font-family: $main-font;
     background: none;
     padding-right: 10px;

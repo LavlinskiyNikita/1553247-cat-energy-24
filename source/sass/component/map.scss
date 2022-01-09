@@ -3,28 +3,39 @@
 }
 
 .address__content {
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 27px;
   display: flex;
   justify-content: space-between;
 }
 
 .address__invitation {
-  max-width: 140px;
+  max-width: 130px;
+  margin: 0;
   font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  P {
+    margin: 0;
+  }
 }
 
 .address__address-element {
-  text-align: right;
+  padding: 0;
+  text-align: left;
   max-width: 145px;
   font-family: $descr-font;
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+}
+
+.address__text {
+  padding: 0;
+  margin: 0;
 }
 
 .map__iframe {
@@ -36,11 +47,19 @@
 }
 
 @media (min-width: 768px) {
+  .address__content {
+    align-items: center;
+    padding-top: 49px;
+    padding-left: 39px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+  }
+
   .address__invitation {
-    max-width: 140px;
+    max-width: 210px;
     font-family: $main-font;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
     text-transform: uppercase;
     color: $black-2;
   }

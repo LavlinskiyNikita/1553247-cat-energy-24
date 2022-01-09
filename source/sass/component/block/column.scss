@@ -1,9 +1,14 @@
 .column {
   box-sizing: border-box;
-  padding: 15px;
+  padding: 19px;
+  padding-top: 5px;
   width: 100%;
   background: $basic-grey;
   margin-bottom: 20px;
+
+  &:not(:first-child) {
+    margin-bottom: 0;
+  }
 }
 
 .column--limming {
@@ -17,7 +22,7 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 35px;
+    top: 26px;
   }
 }
 
@@ -29,7 +34,8 @@
     background-image: url("../img/svg/vectortigr.svg");
     background-repeat: no-repeat;
     background-position: 60% 50%;
-    top: 35px;
+    top: 28px;
+    left: 12px;
     width: 67px;
     height: 50px;
     position: absolute;
@@ -46,7 +52,7 @@
   color: $black;
   padding-top: 5px;
 
-  margin-left: 70px;
+  margin-left: 72px;
   margin-bottom: 29px;
 }
 
@@ -55,7 +61,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   color: $special_dark-grey;
   margin-bottom: 23px;
 }
@@ -97,10 +103,10 @@
 @media (min-width: 768px) {
   .column {
     box-sizing: border-box;
-    padding: 77px 62px 53px 52px;
+    padding: 40px 62px 53px 62px;
     width: 100%;
     background: $basic-grey;
-    margin-bottom: 20px;
+    margin-bottom: 44px;
   }
 
   .column--limming {
@@ -115,8 +121,8 @@
       height: 211px;
       position: absolute;
       top: 50%;
-      right: 62px;
-      transform: translateY(-50%);
+      right: 71px;
+      transform: translateY(-47%);
     }
   }
 
@@ -131,8 +137,9 @@
       width: 268px;
       height: 200px;
       position: absolute;
-      top: 50%;
-      right: 62px;
+      left: auto;
+      top: 53%;
+      right: 37px;
       transform: translateY(-50%);
     }
   }
@@ -158,7 +165,7 @@
   }
 
   .column__desc {
-    width: calc(100% - 290px);
+    width: calc(100% - 260px);
     font-family: $descr-font;
     font-style: normal;
     font-weight: normal;
@@ -206,6 +213,10 @@
     width: 570px;
     background: $basic-grey;
     margin-bottom: 20px;
+
+    &:not(:first-child) {
+      margin-bottom: 20px;
+    }
   }
 
   .column--limming {

@@ -1,8 +1,9 @@
 .result {
+  margin-top: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 52px;
 }
 
 .result__item {
@@ -26,13 +27,15 @@
   font-family: $main-font;
   font-size: 24px;
   color: $black;
-  margin-bottom: 7px;
+  margin-top: 0;
+  margin-bottom: -1px;
 }
 
 .result__text {
   font-family: $descr-font;
   font-size: 12px;
   color: $special-dark-grey;
+  margin-top: 0;
 }
 
 .result__text-price {
@@ -43,6 +46,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+  margin-bottom: 37px;
 }
 
 @media (min-width: 768px) {
@@ -98,10 +102,15 @@
     line-height: 20px;
     text-align: right;
     text-transform: uppercase;
+    margin-top: -10px;
   }
 }
 
 @media (min-width: 1440px) {
+  .result {
+    margin-bottom: 71px;
+  }
+
   .result__bloclk-main {
     list-style: none;
     display: flex;
@@ -109,7 +118,7 @@
     flex-direction: column;
     justify-content: 0;
     margin-bottom: 40px;
-    margin-top: 400px;
+    margin-top: 386px;
   }
 
   .result__spending {
@@ -118,17 +127,25 @@
   }
 
   .example__descr {
+    width: 435px;
     position: absolute;
-    top: 250px;
+    top: 220px;
   }
 
   .result__item {
     background: $basic-grey-3;
+    height: 71px;
   }
 
   .result__block {
     background: $basic-grey-3;
   }
+
+  .result__meaning {
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+
 
   .result__text-price {
     font-family: $main-font;
@@ -138,5 +155,10 @@
     line-height: 20px;
     text-align: left;
     text-transform: uppercase;
+    margin-left: 13px;
+
+    span {
+      margin-left: 58px;
+    }
   }
 }

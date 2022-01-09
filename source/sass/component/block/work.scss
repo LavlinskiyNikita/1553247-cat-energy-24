@@ -32,6 +32,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -119,10 +120,15 @@
     height: 80px;
     margin-right: 20px;
     background: $basic-green;
+    margin-bottom: 35px;
+    margin-left: 7px;
   }
 
   .work__text {
-    width: 55%;
+    width: 65%;
+    margin-left: 7px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -131,6 +137,7 @@
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 60px;
   }
 
   .work__item {

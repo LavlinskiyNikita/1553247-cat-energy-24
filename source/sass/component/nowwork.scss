@@ -3,9 +3,26 @@
 }
 
 .example__descr {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .now-work__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.title--work {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .example__descr {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .now-work {
+    margin-bottom: 32px;
+  }
 }

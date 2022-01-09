@@ -19,6 +19,7 @@
 
 //block
 @import "./component/block/menu.scss";
+@import "./component/block/weight-loss.scss";
 @import "./component/block/column.scss";
 @import "./component/block/work.scss";
 @import "./component/block/result.scss";
@@ -50,3 +51,9 @@ ul {
 .hidden-text {
   display: none;
 }
+
+// *,
+// *::before,
+// *::after {
+//   outline: 1px solid #ff0000;
+// }

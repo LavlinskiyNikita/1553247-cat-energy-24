@@ -6,7 +6,7 @@
 
 .add-product__card {
   border-top: 1px solid $special-grey;
-  padding-top: 13px;
+  padding-top: 9px;
   padding-bottom: 19px;
   width: 100%;
 
@@ -16,14 +16,16 @@
 }
 
 .add-product__name {
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 }
 
 .add-product__title {
+  margin: 0;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 19px;
+  text-transform: uppercase;
   line-height: 16px;
 }
 
@@ -40,6 +42,12 @@
   font-size: 14px;
   line-height: 14px;
   color: $special-dark-grey;
+
+
+  .add-product__value-text,
+  .add-product__price-text {
+    margin: 0;
+  }
 }
 
 .add-product__button {
@@ -62,28 +70,78 @@
 }
 
 @media (min-width: 768px) {
+  .add-product {
+    box-sizing: border-box;
+    padding: 27px 0;
+    border: 1px solid $special-grey;
+  }
+
+  .additional-goods__title {
+    margin-bottom: 85px;
+  }
+
+  .add-product__card {
+    border-top: 1px solid $special-grey;
+    padding-top: 29px;
+    padding-bottom: 28px;
+    padding-left: 38px;
+    padding-right: 38px;
+    width: auto;
+
+    &:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
   .add-product__name-price {
     display: flex;
+    margin-bottom: 10px;
     justify-content: space-between;
   }
 
+  .add-product__price {
+    margin-left: 65px;
+  }
+
   .add-product__price-text {
-    margin-left: 50px;
+    margin-left: 0;
   }
 }
 
 @media (min-width: 1440px) {
   .add-product {
     grid-column: span 3;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
   }
 
   .add-product__card {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+
+    &:first-child {
+      padding-top: 15px;
+      border-top: 1px solid $special-grey;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $special-grey;
+    }
   }
 
   .add-product__name-price {
+    margin-bottom: 0;
     width: 100%;
     height: 100%;
     justify-content: space-between;
@@ -115,7 +173,7 @@
   .add-product__button {
     display: block;
     box-sizing: border-box;
-    width: 244px;
+    width: 370px;
     height: 40px;
     margin-left: 38px;
   }

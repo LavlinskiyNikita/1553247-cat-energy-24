@@ -3,16 +3,18 @@
 }
 
 .form__fieldset {
+  padding: 0;
   border: 0;
 }
 
 .form-section__title {
-  margin-top: 27px;
-  margin-bottom: 37px;
+  margin-top: -9px;
+  margin-bottom: 6px;
 }
 
 .form-section__subitile {
-  margin-bottom: 39px;
+  width: 82%;
+  margin-bottom: 40px;
 }
 
 .form-section__text {
@@ -48,15 +50,19 @@
 }
 
 .form__button-submit {
+  font-family: $header-link;
+  text-transform: uppercase;
   border: 0;
   width: 100%;
   padding: 7px 0;
   background: $basic-green;
   color: $white;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .form__mandatory {
+  margin: 0;
   font-family: $descr-font;
   font-style: normal;
   font-weight: normal;
@@ -68,24 +74,26 @@
 
 @media (min-width: 768px) {
   .form {
-    margin-bottom: 72px;
+    margin-bottom: 54px;
     padding: 0 39px;
   }
 
   .form-section__title {
     padding: 0 39px;
-    margin-top: 64px;
+    margin-top: 52px;
     margin-bottom: 54px;
-  }
-
-  .form__mandatory {
-    text-align: left;
   }
 
   .form-section__subitile {
     padding-left: 39px;
     padding-right: 39px;
-    margin-bottom: 39px;
+    margin-bottom: 69px;
+  }
+
+  .form-section__text {
+    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form__legend {
@@ -115,31 +123,46 @@
     padding: 5px 40px;
     margin-left: -40px;
   }
+
+  .form__button-submit {
+    padding: 14px 0;
+  }
+
+  .form__mandatory {
+    text-align: left;
+    margin-top: 17px;
+  }
 }
 
 @media (min-width: 1440px) {
   .form {
-    margin-bottom: 82px;
+    margin-bottom: 65px;
     padding: 0;
   }
 
   .form-section__title {
     padding: 0;
-    margin-top: 64px;
+    margin-top: 60px;
     margin-bottom: 56px;
+  }
+
+  .form-section__text {
+    width: 35%;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form-section__subitile {
     padding-left: 0;
     padding-right: 39px;
-    margin-bottom: 39px;
+    margin-bottom: 69px;
   }
 
   .form__legend {
     position: relative;
     display: inline-block;
     font-family: $main-font;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 26px;
     margin-bottom: 76px;
     color: $black;
@@ -158,7 +181,7 @@
   }
 
   .form__legend-span {
-    margin-left: -40px;
+    margin-left: -33px;
     background: $white;
     padding: 5px 40px;
   }
@@ -166,7 +189,7 @@
   .form__button-submit {
     border: 0;
     width: 100%;
-    padding: 7px 0;
+    padding: 25px 0;
     background: $basic-green;
 
     font-family: $main-font;

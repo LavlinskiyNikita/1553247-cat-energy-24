@@ -18,6 +18,8 @@
 
 .present-case__ggg {
   color: $white;
+  width: 165px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -28,12 +30,14 @@
     background: url("../img/group2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 120px;
+    padding: 0 90px;
+    height: 203px;
   }
 
   .present-case__text {
     width: 160px;
     text-align: left;
+    margin-right: 44px;
   }
 
   .present-case__ggg {

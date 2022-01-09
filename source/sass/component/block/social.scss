@@ -4,6 +4,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .social__item {
@@ -23,4 +25,12 @@
 .social__link {
   display: inline-block;
   padding: 18px;
+}
+
+@media (min-width: 768px) {
+  .social {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

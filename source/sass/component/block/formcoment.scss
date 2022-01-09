@@ -3,7 +3,7 @@
 }
 
 .form__coment-legend {
-  margin-bottom: 37px;
+  margin-bottom: 30px;
 }
 
 .form__textarea {
@@ -16,6 +16,14 @@
 }
 
 @media (min-width: 768px) {
+  .form__coment {
+    margin-bottom: 68px;
+  }
+
+  .form__coment-legend {
+    margin-bottom: 79px;
+  }
+
   .form__textarea {
     border-radius: 0;
     border: 1px solid $basic-grey;
@@ -36,6 +44,6 @@
 
 @media (min-width: 1440px) {
   .form__coment-legend {
-    margin-bottom: 76px;
+    margin-bottom: 82px;
   }
 }
