@@ -42,3 +42,9 @@
     background: none;
   }
 }
+
+@media (min-width: 1440px) {
+  .footer__container {
+    padding-top: 29px;
+  }
+}

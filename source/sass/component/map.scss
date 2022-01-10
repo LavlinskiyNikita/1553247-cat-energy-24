@@ -94,10 +94,10 @@
   .address__content {
     box-sizing: border-box;
     position: absolute;
-    top: 50%;
+    top: 47%;
     transform: translateY(-50%);
-    width: 565px;
-    padding: 56px 80px;
+    width: 578px;
+    padding: 100px 90px;
     height: 198px;
     display: flex;
     justify-content: space-between;
@@ -106,6 +106,10 @@
 
   .address__invitation {
     line-height: 26px;
+  }
+
+  .address__address-element {
+    text-align: left;
   }
 
   .address__text {

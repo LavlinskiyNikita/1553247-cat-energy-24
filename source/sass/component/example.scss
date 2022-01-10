@@ -179,6 +179,10 @@
     top: 20px;
   }
 
+  .title-example {
+    margin-left: 11px;
+  }
+
   .example__info {
     display: flex;
     flex-direction: column;
@@ -187,6 +191,11 @@
 
   .example__descr {
     width: 40%;
+  }
+
+  .example__text {
+    margin-left: 11px;
+    margin-top: 2px;
   }
 
   .example__information {
@@ -199,9 +208,14 @@
     width: 572px;
   }
 
+  .example__range {
+    margin-top: -10px;
+  }
+
   .example__image-slider {
     position: relative;
     top: -27px;
+    left: -30px;
   }
 
   .example__slider-range {

@@ -127,8 +127,9 @@
   .form__checkbox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 80px;
+    grid-gap: 70px;
     margin-bottom: 58px;
+    padding-left: 11px;
 
     .form__custom-checkbox-label {
       margin-bottom: 0;

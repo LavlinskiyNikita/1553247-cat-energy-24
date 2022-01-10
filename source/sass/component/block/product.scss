@@ -214,6 +214,7 @@
     margin-top: 0;
     font-size: 20px;
     text-align: center;
+    line-height: 21px;
   }
 
   .product__information-production {
@@ -244,7 +245,7 @@
     padding-left: 34px;
     padding-right: 34px;
     padding-bottom: 39px;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
     background: linear-gradient(
       to bottom,
       $white 0%,
@@ -261,7 +262,7 @@
   }
 
   .product__block {
-    margin-bottom: 11px;
+    margin-bottom: 18px;
   }
 
   .product__up {
@@ -270,6 +271,12 @@
 
   .product__name-production {
     margin-bottom: 19px;
+  }
+
+  .product__table-list {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid $special-grey;
   }
 
   .product__block-plus {

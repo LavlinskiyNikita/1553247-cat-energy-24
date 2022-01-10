@@ -150,6 +150,8 @@
 
   .add-product__name {
     margin-bottom: 0;
+    width: 300px;
+    margin-right: 36px;
   }
 
   .add-product__title {
@@ -163,12 +165,18 @@
     text-align: center;
     text-transform: uppercase;
     color: $special-dark-grey-2;
+    padding-left: 14px;
   }
 
   .add-product__description {
+    width: 46%;
+    margin-top: 9px;
     margin-bottom: 0;
     font-size: 16px;
   }
+
+  // .add-product__price {
+  // }
 
   .add-product__button {
     display: block;

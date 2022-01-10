@@ -62,7 +62,7 @@
   }
 
   .menu__item {
-    margin-left: 28px;
+    margin-left: 42px;
     border: 0;
 
     &:last-child {
@@ -95,6 +95,10 @@
 }
 
 @media (min-width: 1440px) {
+  .menu__logo-link {
+    margin-left: 12px;
+  }
+
   .logo-text {
     margin-left: 14px;
   }
@@ -106,6 +110,7 @@
     background: transparent;
     top: 0;
     left: 0;
+    padding-right: 12px;
   }
 
   .menu__link {

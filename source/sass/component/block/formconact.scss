@@ -125,6 +125,7 @@
   }
 
   .form__span-text {
+    width: 76px;
     font-size: 20px;
   }
 
@@ -148,5 +149,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 80px;
+  }
+
+  .form__block {
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      padding-left: 0;
+    }
+  }
+
+  .form__span-text {
+    width: 76px;
+    font-size: 20px;
+    margin-right: 19px;
   }
 }

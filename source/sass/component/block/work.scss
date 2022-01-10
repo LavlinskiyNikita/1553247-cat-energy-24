@@ -58,8 +58,8 @@
       content: "1";
       position: absolute;
       left: 29%;
-      top: -50px;
-      font-size: 220px;
+      top: -61px;
+      font-size: 280px;
       font-family: $main-font;
       color: $gray;
       padding: 0;
@@ -74,7 +74,7 @@
       position: absolute;
       left: 29%;
       top: -50px;
-      font-size: 220px;
+      font-size: 280px;
       font-family: $main-font;
       color: $gray;
       padding: 0;
@@ -89,7 +89,7 @@
       position: absolute;
       left: 29%;
       top: -50px;
-      font-size: 220px;
+      font-size: 280px;
       font-family: $main-font;
       color: $gray;
       padding: 0;
@@ -104,7 +104,7 @@
       position: absolute;
       left: 29%;
       top: -50px;
-      font-size: 220px;
+      font-size: 280px;
       font-family: $main-font;
       color: $gray;
       padding: 0;
@@ -153,9 +153,9 @@
     &::before {
       content: "1";
       position: absolute;
-      left: 55%;
-      top: -50px;
-      font-size: 220px;
+      left: 50%;
+      top: -86px;
+      font-size: 280px;
       font-family: $main-font;
       color: $gray;
       padding: 0;
@@ -168,9 +168,9 @@
     &::before {
       content: "2";
       position: absolute;
-      left: 55%;
-      top: -50px;
-      font-size: 220px;
+      left: 50%;
+      top: -86px;
+      font-size: 280px;
       font-family: $main-font;
       color: $gray;
       padding: 0;
@@ -183,9 +183,9 @@
     &::before {
       content: "3";
       position: absolute;
-      left: 55%;
-      top: -50px;
-      font-size: 220px;
+      left: 50%;
+      top: -86px;
+      font-size: 280px;
       font-family: $main-font;
       color: $gray;
       padding: 0;
@@ -198,15 +198,19 @@
     &::before {
       content: "4";
       position: absolute;
-      left: 55%;
-      top: -50px;
-      font-size: 220px;
+      left: 50%;
+      top: -86px;
+      font-size: 280px;
       font-family: $main-font;
       color: $gray;
       padding: 0;
       margin: 0;
       z-index: -1;
     }
+  }
+
+  .work__icon-block {
+    margin-left: 12px;
   }
 
   .work__text {
