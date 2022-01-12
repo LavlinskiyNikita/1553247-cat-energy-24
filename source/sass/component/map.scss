@@ -10,7 +10,7 @@
 }
 
 .address__invitation {
-  max-width: 130px;
+  width: 336px;
   margin: 0;
   font-family: $main-font;
   font-size: 16px;
@@ -49,10 +49,14 @@
 @media (min-width: 768px) {
   .address__content {
     align-items: center;
-    padding-top: 49px;
-    padding-left: 39px;
+    padding-top: 37px;
+    padding-left: 49px;
     padding-right: 50px;
     padding-bottom: 60px;
+  }
+
+  .address__content-form {
+    padding-top: 60px;
   }
 
   .address__invitation {
@@ -66,7 +70,8 @@
 
   .address__address-element {
     text-align: right;
-    max-width: 145px;
+    max-width: 157px;
+    margin-top: -19px;
     font-family: $descr-font;
     font-size: 16px;
     line-height: 20px;

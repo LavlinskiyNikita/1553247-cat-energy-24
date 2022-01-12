@@ -37,6 +37,7 @@
 
 @media (min-width: 768px) {
   .work {
+    padding-left: 3px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -48,17 +49,17 @@
     position: relative;
     display: block;
     justify-content: space-between;
-    width: 50%;
+    width: 47%;
     padding-top: 20px;
-    margin-bottom: 77px;
+    margin-bottom: 113px;
   }
 
   .work__item:nth-child(1) {
     &::before {
       content: "1";
       position: absolute;
-      left: 29%;
-      top: -61px;
+      left: 38%;
+      top: -86px;
       font-size: 280px;
       font-family: $main-font;
       color: $gray;
@@ -72,8 +73,8 @@
     &::before {
       content: "2";
       position: absolute;
-      left: 29%;
-      top: -50px;
+      left: 35%;
+      top: -86px;
       font-size: 280px;
       font-family: $main-font;
       color: $gray;
@@ -87,8 +88,8 @@
     &::before {
       content: "3";
       position: absolute;
-      left: 29%;
-      top: -50px;
+      left: 36%;
+      top: -86px;
       font-size: 280px;
       font-family: $main-font;
       color: $gray;
@@ -102,8 +103,8 @@
     &::before {
       content: "4";
       position: absolute;
-      left: 29%;
-      top: -50px;
+      left: 36%;
+      top: -86px;
       font-size: 280px;
       font-family: $main-font;
       color: $gray;
@@ -120,15 +121,19 @@
     height: 80px;
     margin-right: 20px;
     background: $basic-green;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
     margin-left: 7px;
   }
 
   .work__text {
-    width: 65%;
+    width: 72%;
     margin-left: 7px;
     font-size: 16px;
     line-height: 24px;
+
+    &:nth-child(4) {
+      width: 100px;
+    }
   }
 }
 

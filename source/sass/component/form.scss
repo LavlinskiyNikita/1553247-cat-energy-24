@@ -75,17 +75,17 @@
 @media (min-width: 768px) {
   .form {
     margin-bottom: 54px;
-    padding: 0 39px;
+    padding: 0 48px;
   }
 
   .form-section__title {
-    padding: 0 39px;
+    padding: 0 49px;
     margin-top: 52px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .form-section__subitile {
-    padding-left: 39px;
+    padding-left: 50px;
     padding-right: 39px;
     margin-bottom: 69px;
   }
@@ -121,7 +121,7 @@
   .form__legend-span {
     background: $white;
     padding: 5px 40px;
-    margin-left: -40px;
+    margin-left: -42px;
   }
 
   .form__button-submit {
@@ -194,9 +194,11 @@
   }
 
   .form__button-submit {
+    box-sizing: border-box;
     border: 0;
-    width: 100%;
+    width: 97%;
     padding: 25px 0;
+    padding-right: 10px;
     background: $basic-green;
 
     font-family: $main-font;

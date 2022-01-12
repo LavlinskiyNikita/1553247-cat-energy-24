@@ -23,3 +23,30 @@
     background: $basic-grey-2;
   }
 }
+
+@media (min-width: 1440px) {
+  .product-btn {
+    box-sizing: border-box;
+    padding: 0 38px;
+  }
+
+  .product__link-plus {
+    text-decoration: none;
+    padding: 10px 0;
+    display: inline-block;
+    background: $gray;
+    width: 100%;
+
+    font-family: $header-link;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+
+    &:hover {
+      background: $basic-grey-2;
+    }
+  }
+}

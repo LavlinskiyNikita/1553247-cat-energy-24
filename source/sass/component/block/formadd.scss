@@ -30,7 +30,7 @@
   border: 1px solid $special-grey;
   width: 30px;
   height: 30px;
-  margin-right: 16px;
+  margin-right: 12px;
 }
 
 .form__custom-checkbox::before {
@@ -68,7 +68,7 @@
   .form__checkbox {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 45px;
+    grid-column-gap: 59px;
     margin-bottom: 51px;
   }
 
@@ -134,5 +134,14 @@
     .form__custom-checkbox-label {
       margin-bottom: 0;
     }
+  }
+
+  .form__send-block {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 60px;
+    padding-left: 10px;
   }
 }

@@ -24,7 +24,7 @@
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 16px;
   text-transform: uppercase;
   line-height: 16px;
 }
@@ -74,6 +74,8 @@
     box-sizing: border-box;
     padding: 27px 0;
     border: 1px solid $special-grey;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .additional-goods__title {
@@ -106,6 +108,10 @@
 
   .add-product__price {
     margin-left: 65px;
+  }
+
+  .add-product__title {
+    font-size: 19px;
   }
 
   .add-product__price-text {
@@ -165,7 +171,7 @@
     text-align: center;
     text-transform: uppercase;
     color: $special-dark-grey-2;
-    padding-left: 14px;
+    padding-left: 0;
   }
 
   .add-product__description {

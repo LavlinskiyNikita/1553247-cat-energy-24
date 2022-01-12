@@ -41,6 +41,11 @@
 }
 
 @media (min-width: 768px) {
+  .menu {
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+
   .logo-text {
     margin-right: auto;
     margin-left: 12px;
@@ -62,7 +67,7 @@
   }
 
   .menu__item {
-    margin-left: 42px;
+    margin-left: 39px;
     border: 0;
 
     &:last-child {
@@ -79,7 +84,7 @@
     font-family: $header-link;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 20px;
     text-transform: uppercase;
     color: $black;

@@ -51,11 +51,14 @@
 
 @media (min-width: 768px) {
   .result__bloclk-main {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .result__item {
@@ -63,7 +66,7 @@
     box-sizing: border-box;
     border-radius: 3px;
     width: 162px;
-    height: 56px;
+    height: 72px;
     background: $white;
     margin-right: 42px;
   }
@@ -78,7 +81,7 @@
 
   .result__meaning {
     font-family: $main-font;
-    font-size: 24px;
+    font-size: 28px;
     color: $black;
     margin-top: 10px;
     margin-bottom: 7px;
@@ -91,6 +94,7 @@
 
   .result__spending {
     width: 174px;
+    margin-top: -6px;
     margin-left: auto;
   }
 
@@ -99,7 +103,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: right;
     text-transform: uppercase;
     margin-top: -10px;
@@ -108,8 +112,8 @@
 
 @media (min-width: 1440px) {
   .result {
-    margin-bottom: 71px;
-    margin-left: 10px;
+    margin-bottom: 78px;
+    margin-left: 0;
   }
 
   .result__bloclk-main {
@@ -128,9 +132,10 @@
   }
 
   .example__descr {
-    width: 435px;
+    width: 450px;
     position: absolute;
     top: 220px;
+    padding-left: 0;
   }
 
   .result__item {
@@ -156,7 +161,7 @@
     line-height: 20px;
     text-align: left;
     text-transform: uppercase;
-    margin-left: 13px;
+    margin-left: 2px;
 
     span {
       margin-left: 58px;

@@ -15,8 +15,22 @@
 }
 
 @media (min-width: 768px) {
+  .now-work {
+    margin-bottom: 41px;
+  }
+
   .example__descr {
-    margin-bottom: 60px;
+    padding-left: 10px;
+    margin-bottom: 52px;
+  }
+
+  .now-work__title {
+    margin-bottom: 53px;
+  }
+
+  .title--work {
+    margin: 0;
+    padding-left: 10px;
   }
 }
 

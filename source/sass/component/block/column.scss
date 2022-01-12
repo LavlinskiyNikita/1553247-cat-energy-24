@@ -106,7 +106,7 @@
     padding: 40px 62px 53px 62px;
     width: 100%;
     background: $basic-grey;
-    margin-bottom: 44px;
+    margin-bottom: 35px;
   }
 
   .column--limming {
@@ -154,7 +154,7 @@
 
     text-transform: uppercase;
     color: $black;
-    padding-top: 5px;
+    padding-top: 0;
 
     margin-left: 0;
     margin-bottom: 24px;
@@ -172,7 +172,7 @@
     font-size: 16px;
     line-height: 24px;
     color: $special_dark-grey;
-    margin-bottom: 23px;
+    margin-bottom: 59px;
   }
 
   .column__outline {
@@ -232,7 +232,7 @@
       position: absolute;
       top: 96px;
       right: 0;
-      left: 39px;
+      left: 53px;
       transform: translateY(-50%);
     }
   }
@@ -250,7 +250,7 @@
       position: absolute;
       top: 100px;
       right: 0;
-      left: 12px;
+      left: 23px;
       transform: translateY(-50%);
     }
   }
@@ -266,12 +266,12 @@
     padding-top: 34px;
 
     margin: 0;
-    margin-left: 150px;
-    margin-bottom: 73px;
+    margin-left: 161px;
+    margin-bottom: 75px;
   }
 
   .column__text {
-    margin-bottom: 27px;
+    margin-bottom: 33px;
   }
 
   .column__desc {

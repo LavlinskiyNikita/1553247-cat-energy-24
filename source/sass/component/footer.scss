@@ -24,7 +24,10 @@
 
 @media (min-width: 768px) {
   .footer__container {
-    padding-top: 43px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 36px;
     padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
@@ -46,5 +49,7 @@
 @media (min-width: 1440px) {
   .footer__container {
     padding-top: 29px;
+    padding-left: 10px;
+    padding-right: 12px;
   }
 }

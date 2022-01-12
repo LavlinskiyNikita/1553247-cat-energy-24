@@ -62,7 +62,7 @@
 
   .first-screen__title {
     margin-top: 0;
-    margin-bottom: 45px;
+    margin-bottom: 41px;
   }
 
   .title--main-screen {
@@ -100,11 +100,11 @@
     width: 244px;
     padding: 13px 19px;
     color: $white;
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: $header-link;
+    font-family: $main-font;
 
     &:hover {
       background: $basic-green-2;
