@@ -13,15 +13,21 @@
 
 
 .menu__list {
-  display: none;
+  transform: translateY(-300px);
   list-style: none;
   position: absolute;
-  top: 26px;
+  top: 37px;
   left: -20px;
   padding: 0 20px;
   width: 100%;
   background: rgb(255, 255, 255);
   text-align: center;
+  transition: transform 0.4s ease-in;
+}
+
+.menu__list--active {
+  transform: translateY(0);
+  transition: transform 0.6s ease-in-out;
 }
 
 .menu__item {
