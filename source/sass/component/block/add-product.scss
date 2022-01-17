@@ -1,12 +1,12 @@
 .additional-goods__title {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 36px;
+  margin-bottom: 37px;
 }
 
 .add-product__card {
   border-top: 1px solid $special-grey;
-  padding-top: 9px;
+  padding-top: 12px;
   padding-bottom: 19px;
   width: 100%;
 
@@ -16,7 +16,7 @@
 }
 
 .add-product__name {
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .add-product__title {
@@ -70,12 +70,17 @@
 }
 
 @media (min-width: 768px) {
+  .add-product-conent {
+    padding: 0 30px;
+  }
+
   .add-product {
     box-sizing: border-box;
     padding: 27px 0;
     border: 1px solid $special-grey;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 0;
   }
 
   .additional-goods__title {
@@ -85,9 +90,9 @@
   .add-product__card {
     border-top: 1px solid $special-grey;
     padding-top: 29px;
-    padding-bottom: 28px;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-bottom: 29px;
+    padding-left: 28px;
+    padding-right: 28px;
     width: auto;
 
     &:first-child {
@@ -102,16 +107,25 @@
 
   .add-product__name-price {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     justify-content: space-between;
   }
 
   .add-product__price {
-    margin-left: 65px;
+    margin-left: 54px;
   }
 
   .add-product__title {
-    font-size: 19px;
+    font-size: 20px;
+  }
+
+  .add-product__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 14px;
   }
 
   .add-product__price-text {
@@ -175,7 +189,7 @@
   }
 
   .add-product__description {
-    width: 46%;
+    width: 48%;
     margin-top: 9px;
     margin-bottom: 0;
     font-size: 16px;
@@ -187,8 +201,8 @@
   .add-product__button {
     display: block;
     box-sizing: border-box;
-    width: 370px;
+    width: 342px;
     height: 40px;
-    margin-left: 38px;
+    margin-left: 48px;
   }
 }

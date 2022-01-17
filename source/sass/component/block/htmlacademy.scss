@@ -1,6 +1,6 @@
 .html-academy__logo {
-  padding-top: 9px;
-  padding-bottom: 22px;
+  padding-top: 12px;
+  padding-bottom: 17px;
 }
 
 .html-academy__link {
@@ -31,5 +31,12 @@
 @media (min-width: 768px) {
   .html-academy__slogan {
     margin-right: 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .html-academy__logo {
+    padding-top: 14px;
+    padding-bottom: 22px;
   }
 }

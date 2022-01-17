@@ -3,14 +3,14 @@
 }
 
 .address__content {
-  padding-top: 24px;
+  padding-top: 21px;
   padding-bottom: 27px;
   display: flex;
   justify-content: space-between;
 }
 
 .address__invitation {
-  width: 336px;
+  width: 224px;
   margin: 0;
   font-family: $main-font;
   font-size: 16px;
@@ -33,9 +33,10 @@
   color: $special_dark-grey;
 }
 
-.address__text {
-  padding: 0;
+.address__city-text,
+.address__street-text {
   margin: 0;
+  padding: 0;
 }
 
 .map__iframe {
@@ -49,8 +50,8 @@
 @media (min-width: 768px) {
   .address__content {
     align-items: center;
-    padding-top: 37px;
-    padding-left: 49px;
+    padding-top: 41px;
+    padding-left: 38px;
     padding-right: 50px;
     padding-bottom: 60px;
   }
@@ -64,6 +65,7 @@
     font-family: $main-font;
     font-size: 20px;
     line-height: 26px;
+    margin-left: 13px;
     text-transform: uppercase;
     color: $black-2;
   }
@@ -71,11 +73,20 @@
   .address__address-element {
     text-align: right;
     max-width: 157px;
-    margin-top: -19px;
+    margin-top: -6px;
     font-family: $descr-font;
     font-size: 16px;
     line-height: 20px;
     color: $special_dark-grey;
+  }
+
+  .address__street {
+    margin-bottom: 20px;
+  }
+
+  .address__city-text {
+    margin: 0;
+    padding: 0;
   }
 
   .map__iframe {
@@ -102,7 +113,7 @@
     top: 47%;
     transform: translateY(-50%);
     width: 578px;
-    padding: 100px 90px;
+    padding: 100px 79px;
     height: 198px;
     display: flex;
     justify-content: space-between;
@@ -111,14 +122,22 @@
 
   .address__invitation {
     line-height: 26px;
+    margin-left: 13px;
   }
 
   .address__address-element {
+    margin: 0;
     text-align: left;
+    margin-top: 0;
   }
 
-  .address__text {
+  .address__street {
+    margin-bottom: 20px;
+  }
+
+  .address__city-text {
     margin: 0;
+    padding: 0;
   }
 
   .map__iframe {

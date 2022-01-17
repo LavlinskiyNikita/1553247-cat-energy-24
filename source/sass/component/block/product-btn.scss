@@ -26,6 +26,7 @@
 
 @media (min-width: 1440px) {
   .product-btn {
+    width: auto;
     box-sizing: border-box;
     padding: 0 38px;
   }
@@ -35,7 +36,7 @@
     padding: 10px 0;
     display: inline-block;
     background: $gray;
-    width: 100%;
+    width: 89%;
 
     font-family: $header-link;
     font-style: normal;
@@ -44,6 +45,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $special-dark-grey;
+    margin-left: -23px;
 
     &:hover {
       background: $basic-grey-2;

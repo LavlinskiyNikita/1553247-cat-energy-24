@@ -1,5 +1,5 @@
 .form {
-  margin-bottom: 32px;
+  margin-bottom: 38px;
 }
 
 .form__fieldset {
@@ -57,8 +57,8 @@
   padding: 7px 0;
   background: $basic-green;
   color: $white;
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 15px;
+  margin-bottom: 23px;
 }
 
 .form__mandatory {
@@ -74,13 +74,13 @@
 
 @media (min-width: 768px) {
   .form {
-    margin-bottom: 54px;
+    margin-bottom: 49px;
     padding: 0 48px;
   }
 
   .form-section__title {
     padding: 0 49px;
-    margin-top: 52px;
+    margin-top: 46px;
     margin-bottom: 52px;
   }
 
@@ -121,17 +121,19 @@
   .form__legend-span {
     background: $white;
     padding: 5px 40px;
-    margin-left: -42px;
+    margin-left: -40px;
   }
 
   .form__button-submit {
-    padding: 14px 0;
+    font-size: 19px;
+    padding: 13px 0;
   }
 
   .form__mandatory {
     text-align: left;
     margin-top: 17px;
-    margin-left: 10px;
+    margin-left: 1px;
+    font-size: 16px;
   }
 }
 
@@ -158,7 +160,7 @@
   .form-section__subitile {
     padding-left: 0;
     padding-right: 39px;
-    margin-bottom: 69px;
+    margin-bottom: 65px;
   }
 
   .form__legend {
@@ -184,13 +186,14 @@
   }
 
   .form__legend-span {
-    margin-left: -33px;
+    margin-left: -28px;
     background: $white;
     padding: 5px 40px;
   }
 
   .form__mandatory {
     font-size: 16px;
+    margin-left: 6px;
   }
 
   .form__button-submit {

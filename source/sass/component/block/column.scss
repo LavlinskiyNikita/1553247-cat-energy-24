@@ -23,6 +23,7 @@
     height: 50px;
     position: absolute;
     top: 26px;
+    left: 22px;
   }
 }
 
@@ -34,7 +35,7 @@
     background-image: url("../img/svg/vectortigr.svg");
     background-repeat: no-repeat;
     background-position: 60% 50%;
-    top: 28px;
+    top: 26px;
     left: 12px;
     width: 67px;
     height: 50px;
@@ -50,7 +51,7 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
-  padding-top: 5px;
+  padding-top: 4px;
 
   margin-left: 72px;
   margin-bottom: 29px;
@@ -70,7 +71,7 @@
   width: 100%;
   height: 1px;
   background: $basic-grey-1;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .column__link {
@@ -122,6 +123,7 @@
       position: absolute;
       top: 50%;
       right: 71px;
+      left: auto;
       transform: translateY(-47%);
     }
   }
@@ -200,8 +202,8 @@
       display: inline-block;
       width: 32px;
       height: 10px;
-      margin-top: 6px;
-      margin-left: 15px;
+      margin-top: 3px;
+      margin-left: 25px;
     }
   }
 }
@@ -283,5 +285,28 @@
     line-height: 24px;
     color: $special_dark-grey;
     margin-bottom: 23px;
+  }
+
+  .column__link {
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black;
+
+    &::after {
+      content: "";
+      background-image: url("../img/svg/icon_arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      position: absolute;
+      display: inline-block;
+      width: 32px;
+      height: 10px;
+      margin-top: 3px;
+      margin-left: 28px;
+    }
   }
 }

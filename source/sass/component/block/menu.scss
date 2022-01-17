@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+.logo-text {
+  margin-top: 5px;
+  margin-right: 9px;
+}
+
+
 .menu__list {
   display: none;
   list-style: none;
@@ -48,7 +54,7 @@
 
   .logo-text {
     margin-right: auto;
-    margin-left: 12px;
+    margin-left: 0;
   }
 
   .logo-link {
@@ -100,7 +106,13 @@
 }
 
 @media (min-width: 1440px) {
-  .menu__logo-link {
+  .menu {
+    box-sizing: border-box;
+    padding-left: 0;
+  }
+
+  .logo-link {
+    margin-right: 0;
     margin-left: 12px;
   }
 

@@ -4,7 +4,7 @@
 }
 
 .example__title {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .title-example {
@@ -41,7 +41,13 @@
   text-align: center;
 }
 
+.example__image-slider {
+  margin-bottom: 6px;
+}
+
 .example__range {
+  margin: 0 auto;
+  width: 211px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +63,8 @@
 .example__slider-range {
   appearance: none;
   width: 100%;
-  height: 14px;
+  height: 5px;
+  border-radius: 129px;
   border: 4px solid $white;
   background: linear-gradient(
     to right,
@@ -124,7 +131,7 @@
       left: -20px;
       bottom: -16px;
       z-index: -1;
-      width: 100%;
+      width: calc(100% + 40px);
       height: 482px;
       background: $basic-grey-3;
     }
@@ -171,6 +178,7 @@
 @media (min-width: 1440px) {
   .example-section {
     position: relative;
+    margin-bottom: 8px;
 
     &::after {
       content: "";
@@ -195,7 +203,8 @@
   }
 
   .title-example {
-    margin-left: 3px;
+    margin-left: 2px;
+    margin-top: -3px;
   }
 
   .example__info {

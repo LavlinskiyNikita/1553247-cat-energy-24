@@ -1,5 +1,5 @@
 .first-screen-section {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .title--main-screen {
@@ -40,11 +40,12 @@
   width: 100%;
   padding: 7px 0;
   color: $white;
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
   text-decoration: none;
   font-family: $main-font;
   font-weight: 400;
+  margin-top: 1px;
 }
 
 @media (min-width: 768px) {
