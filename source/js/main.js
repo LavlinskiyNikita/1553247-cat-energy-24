@@ -1,9 +1,9 @@
 // slider с котами
 const windowWidth = window.innerWidth ;
 
-const tabletDesktop = 768;
+const TABLET_DESKTOP = 768;
 
-if (tabletDesktop <= windowWidth) {
+if (TABLET_DESKTOP <= windowWidth) {
   // кнопки
   const btnBefore = document.querySelector(".example__button--before");
   const btnAfter = document.querySelector(".example__button--after");
@@ -21,20 +21,20 @@ if (tabletDesktop <= windowWidth) {
   });
 
   btnBefore.addEventListener("click", () => {
-    imageBefore.style.width = 100 + '%';
-    imageAfter.style.width = 0 + '%';
+    imageBefore.style.width = `${100}%`;
+    imageAfter.style.width = `${0}%`;
   });
 
   btnAfter.addEventListener("click", () => {
-    imageBefore.style.width = 0 + '%';
-    imageAfter.style.width = 100 + '%';
+    imageBefore.style.width = `${0}%`;
+    imageAfter.style.width = `${100}%`;
   });
 }
 
 // меню
 
-const btnHumburger = document.querySelector(".humburger"),
-      menu = document.querySelector(".menu__list");
+const btnHumburger = document.querySelector(".humburger");
+const menu = document.querySelector(".menu__list");
 
 btnHumburger.addEventListener('click', () => {
   menu.classList.toggle("menu__list--active");

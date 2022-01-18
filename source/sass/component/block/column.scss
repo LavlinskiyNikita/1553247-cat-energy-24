@@ -104,10 +104,14 @@
 @media (min-width: 768px) {
   .column {
     box-sizing: border-box;
-    padding: 40px 62px 53px 62px;
+    padding: 40px 55px 59px 52px;
     width: 100%;
     background: $basic-grey;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
+
+    &:not(:first-child) {
+      margin-bottom: -9px;
+    }
   }
 
   .column--limming {
@@ -121,8 +125,8 @@
       width: 200px;
       height: 211px;
       position: absolute;
-      top: 50%;
-      right: 71px;
+      top: 49%;
+      right: 61px;
       left: auto;
       transform: translateY(-47%);
     }
@@ -140,8 +144,8 @@
       height: 200px;
       position: absolute;
       left: auto;
-      top: 53%;
-      right: 37px;
+      top: 51%;
+      right: 28px;
       transform: translateY(-50%);
     }
   }
@@ -212,13 +216,10 @@
   .column {
     box-sizing: border-box;
     padding: 45px 52px;
+    padding-bottom: 61px;
     width: 570px;
     background: $basic-grey;
-    margin-bottom: 20px;
-
-    &:not(:first-child) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 0;
   }
 
   .column--limming {

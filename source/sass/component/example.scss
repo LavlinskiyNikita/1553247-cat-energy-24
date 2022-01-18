@@ -42,6 +42,8 @@
 }
 
 .example__image-slider {
+  width: 290px;
+  margin: 0 auto;
   margin-bottom: 6px;
 }
 
@@ -143,9 +145,10 @@
 
   .example__image-slider {
     position: relative;
-    margin-bottom: 21px;
     height: 511px;
-    width: 100%;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 21px;
   }
 
   .example__image--after {
@@ -161,7 +164,7 @@
 
   .img__slider--after {
     position: absolute;
-    left: 100px;
+    left: 34px;
   }
 
   .example__image--before {
@@ -178,8 +181,8 @@
     position: absolute;
     min-width: 550px;
     height: 511px;
-    top: 1px;
-    right: 59px;
+    top: 4px;
+    right: -6px;
   }
 
   .example__range {
@@ -281,7 +284,7 @@
   .example__image-slider {
     position: relative;
     top: -27px;
-    left: -21px;
+    left: -33px;
     margin-bottom: 6px;
   }
 
@@ -296,15 +299,15 @@
 
   .img__slider--after {
     position: absolute;
-    left: 20px;
+    left: 33px;
   }
 
   .img__slider--bafore {
     position: absolute;
     min-width: 550px;
     height: 511px;
-    top: 4px;
-    right: -19px;
+    top: 2px;
+    right: -3px;
   }
 
   .example__slider::before {
