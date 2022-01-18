@@ -4,8 +4,9 @@
   margin-bottom: 24px;
 
   &:last-child {
+    display: block;
     border-bottom: 1px solid $basic-grey-2;
-    padding-bottom: 7px;
+    padding-bottom: 0;
   }
 }
 
@@ -117,7 +118,7 @@
 }
 
 .product__block-descr {
-  margin-bottom: 10px;
+  margin-bottom: -8px;
 }
 
 .product__block-title {

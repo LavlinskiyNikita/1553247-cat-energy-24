@@ -1,0 +1,122 @@
+.address__block {
+  background: $gray;
+}
+
+.address__content {
+  padding-top: 21px;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__invitation {
+  width: 224px;
+  margin: 0;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.address__invitation--invitations {
+  margin: 0;
+}
+
+.address__address-element {
+  padding: 0;
+  text-align: left;
+  max-width: 145px;
+  font-family: $descr-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+}
+
+.address__city-text,
+.address__street-text {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .address__content {
+    align-items: center;
+    padding-top: 41px;
+    padding-left: 38px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+  }
+
+  .address__content-form {
+    padding-top: 60px;
+  }
+
+  .address__invitation {
+    max-width: 210px;
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 13px;
+    text-transform: uppercase;
+    color: $black-2;
+  }
+
+  .address__address-element {
+    text-align: right;
+    max-width: 157px;
+    margin-top: -6px;
+    font-family: $descr-font;
+    font-size: 16px;
+    line-height: 20px;
+    color: $special_dark-grey;
+  }
+
+  .address__street {
+    margin-bottom: 20px;
+  }
+
+  .address__city-text {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .address__block {
+    padding: 0;
+  }
+
+  .address__content {
+    box-sizing: border-box;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    width: 578px;
+    padding: 100px 79px;
+    height: 198px;
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+  }
+
+  .address__invitation {
+    line-height: 26px;
+    margin-left: 13px;
+  }
+
+  .address__address-element {
+    margin: 0;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .address__street {
+    margin-bottom: 20px;
+  }
+
+  .address__city-text {
+    margin: 0;
+    padding: 0;
+  }
+}

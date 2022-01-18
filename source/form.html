@@ -23,17 +23,17 @@
     <header class="header">
       <div class="container">
         <nav class="menu">
-          <a href="./index.html" class="logo-link">
+          <a href="./index.html" class="menu__logo-link">
             <picture>
               <source media="(min-width: 1440px)" srcset="./img/svg/logo/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="./img/svg/logo/logo-tablet.svg">
               <img src="./img/svg/logo/logo-phone.svg" alt="car Energy">
             </picture>
           </a>
-          <a href="./index.html" class="logo-text">
+          <a href="./index.html" class="menu__logo-text">
             <img src="./img/svg/catenergy.svg" alt="car Energy" />
           </a>
-          <ul class="menu__list">
+          <ul class="menu__list menu__list--active">
             <li class="menu__item">
               <a href="./index.html" class="menu__link">главная</a>
             </li>
@@ -44,10 +44,10 @@
               <a class="menu__link menu__link--current">подбор программы</a>
             </li>
           </ul>
-          <button type="button" class="humburger">
-            <div class="humburger__line"></div>
-            <div class="humburger__line"></div>
-            <div class="humburger__line"></div>
+          <button type="button" class="humburger humburger--active">
+            <span class="humburger__line line-one"></span>
+            <span class="humburger__line line-ftree"></span>
+            <span class="humburger__line line-four"></span>
           </button>
         </nav>
       </div>

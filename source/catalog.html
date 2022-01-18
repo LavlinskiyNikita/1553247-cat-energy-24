@@ -24,17 +24,17 @@
     <header class="header">
       <div class="container">
         <nav class="menu">
-          <a href="./index.html" class="logo-link">
+          <a href="./index.html" class="menu__logo-link">
             <picture>
               <source media="(min-width: 1440px)" srcset="./img/svg/logo/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="./img/svg/logo/logo-tablet.svg">
               <img src="./img/svg/logo/logo-phone.svg" alt="car Energy">
             </picture>
           </a>
-          <a href="./index.html" class="logo-text">
+          <a href="./index.html" class="menu__logo-text">
             <img src="./img/svg/catenergy.svg" alt="car Energy" />
           </a>
-          <ul class="menu__list">
+          <ul class="menu__list menu__list--active">
             <li class="menu__item">
               <a href="./index.html" class="menu__link">главная</a>
             </li>
@@ -45,20 +45,21 @@
               <a href="./form.html" class="menu__link">подбор программы</a>
             </li>
           </ul>
-          <button type="button" class="humburger">
-            <div class="humburger__line"></div>
-            <div class="humburger__line"></div>
-            <div class="humburger__line"></div>
+          <button type="button" class="humburger humburger--active">
+            <span class="humburger__line line-one"></span>
+            <span class="humburger__line line-ftree"></span>
+            <span class="humburger__line line-four"></span>
           </button>
         </nav>
       </div>
     </header>
     <main class="main">
       <section class="catalog">
+        <h2 class="hidden-text">productio</h2>
         <section class="shop-section">
           <div class="container">
             <div class="shop__title">
-              <h1 class="title title--shop">Каталог продукции</h1>
+              <h2 class="title title--shop">Каталог продукции</h2>
             </div>
             <div class="products">
               <article class="product">
@@ -68,7 +69,7 @@
                       <picture>
                         <source media="(min-width: 1440px)" srcset="./img/product/desktop/catalog-1-desktop.png 1x, ./img/product/desktop/catalog-1-desktop@2x.png 2x">
                         <source media="(min-width: 768px)" srcset="./img/product/desktop/catalog-1-desktop.png 1x, ./img/product/desktop/catalog-1-desktop@2x.png 2x">
-                        <img class="product__image" src="./img/product/catalog-1-desktop.png" alt="product"/>
+                        <img class="product__image" src="./img/product/catalog-1-desktop.png" srcset="./img/product/catalog-1-desktop@2x.png 2x" alt="product"/>
                       </picture>
                     </div>
                   </div>
@@ -108,7 +109,7 @@
                       <picture>
                         <source media="(min-width: 1440px)" srcset="./img/product/desktop/catalog-2-desktop.png 1x, ./img/product/desktop/catalog-2-desktop@2x.png 2x">
                         <source media="(min-width: 768px)" srcset="./img/product/desktop/catalog-2-desktop.png 1x, ./img/product/desktop/catalog-2-desktop@2x.png 2x">
-                        <img class="product__image" src="./img/product/catalog-2-desktop.png" srcset="" alt="product"/>
+                        <img class="product__image" src="./img/product/catalog-2-desktop.png" srcset="./img/product/catalog-2-desktop@2x.png 2x" alt="product"/>
                       </picture>
                     </div>
                   </div>
@@ -148,7 +149,7 @@
                       <picture>
                         <source media="(min-width: 1440px)" srcset="./img/product/desktop/catalog-3-desktop.png 1x, ./img/product/desktop/catalog-3-desktop@2x.png 2x">
                         <source media="(min-width: 768px)" srcset="./img/product/desktop/catalog-3-desktop.png 1x,  ./img/product/desktop/catalog-3-desktop@2x.png 2x">
-                        <img class="product__image" src="./img/product/catalog-3-desktop.png" alt="product"/>
+                        <img class="product__image" src="./img/product/catalog-3-desktop.png" srcset="./img/product/catalog-3-desktop@2x.png 2x" alt="product"/>
                       </picture>
                     </div>
                   </div>
@@ -189,7 +190,7 @@
                       <picture>
                         <source media="(min-width: 1440px)" srcset="./img/product/desktop/catalog-4-desktop.png 1x, ./img/product/desktop/catalog-4-desktop@2x.png 2x">
                         <source media="(min-width: 768px)" srcset="./img/product/desktop/catalog-4-desktop.png 1x, ./img/product/desktop/catalog-4-desktop@2x.png 2x">
-                        <img class="product__image" src="./img/product/catalog-4-desktop.png" alt="product"/>
+                        <img class="product__image" src="./img/product/catalog-4-desktop.png" srcset="./img/product/catalog-4-desktop@2x.png 2x" alt="product"/>
                       </picture>
                     </div>
                   </div>
@@ -270,7 +271,7 @@
                       <picture>
                         <source media="(min-width: 1440px)" srcset="./img/product/desktop/catalog-6-desktop.png 1x, ./img/product/desktop/catalog-6-desktop@2x.png 2x">
                         <source media="(min-width: 768px)" srcset="./img/product/desktop/catalog-6-desktop.png 1x, ./img/product/desktop/catalog-6-desktop@2x.png 2x">
-                        <img class="product__image" src="./img/product/catalog-6-desktop.png" alt="product"/>
+                        <img class="product__image" src="./img/product/catalog-6-desktop.png" srcset="./img/product/catalog-6-desktop@2x.png 2x" alt="product"/>
                       </picture>
                     </div>
                   </div>
@@ -310,7 +311,7 @@
                       <picture>
                         <source media="(min-width: 1440px)" srcset="./img/product/desktop/catalog-7-desktop.png 1x, ./img/product/desktop/catalog-7-desktop@2x.png 2x">
                         <source media="(min-width: 768px)" srcset="./img/product/desktop/catalog-7-desktop.png 1x, ./img/product/desktop/catalog-7-desktop@2x.png 2x">
-                        <img class="product__image" src="./img/product/catalog-7-desktop.png" alt="product"/>
+                        <img class="product__image" src="./img/product/catalog-7-desktop.png" srcset="./img/product/catalog-7-desktop@2x.png 2x" alt="product"/>
                       </picture>
                     </div>
                   </div>
@@ -343,7 +344,7 @@
                   <a href="#" class="product__link">заказать</a>
                 </div>
               </article>
-              <button class="product product-btn">
+              <a class="product product-btn">
                 <div class="product__block product__block-plus">
                   <div class="product__plus-icon">
                     <picture>
@@ -360,9 +361,9 @@
                       На самом деле вкусов гораздо больше!
                     </p>
                   </div>
-                  <a href="#" class="product__link-plus">показать все</a>
+                  <p class="product__link-plus">показать все</p>
                 </div>
-              </button>
+              </a>
             </div>
           </div>
         </section>
