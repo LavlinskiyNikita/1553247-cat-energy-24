@@ -32,6 +32,16 @@
   .additional-goods__title-text {
     padding-left: 47px;
     font-size: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 45%;
+      height: 2px;
+      right: -20px;
+      top: 50%;
+      background: $basic-green;
+    }
   }
 }
 
