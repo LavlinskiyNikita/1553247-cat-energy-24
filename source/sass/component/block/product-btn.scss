@@ -2,12 +2,10 @@
   width: 100%;
   border: 0;
   background: transparent;
-  margin-bottom: 17px;
+  margin-bottom: 33px;
 }
 
 .product__link-plus {
-  margin-block-end: 0;
-  margin-block-start: 0;
   text-decoration: none;
   padding: 10px 0;
   display: inline-block;
@@ -21,10 +19,31 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special-dark-grey;
-  margin-bottom: 52px;
+  margin-bottom: 0;
 
   &:hover {
     background: $basic-grey-2;
+  }
+}
+
+@media (min-width: 768px) {
+  .product__link-plus {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    text-decoration: none;
+    padding: 10px 0;
+    display: inline-block;
+    background: $gray;
+    width: 100%;
+
+    font-family: $header-link;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+    margin-bottom: 52px;
   }
 }
 
@@ -37,7 +56,7 @@
 
   .product__link-plus {
     text-decoration: none;
-    margin-bottom: 39px;
+    margin-bottom: 29px;
     padding: 10px 0;
     display: inline-block;
     background: $gray;
