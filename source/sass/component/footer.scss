@@ -3,8 +3,8 @@
 }
 
 .footer__logo-text {
-  padding-top: 39px;
-  padding-bottom: 32px;
+  padding-top: 34px;
+  padding-bottom: 28px;
   text-align: center;
 
   &:hover {
@@ -24,14 +24,33 @@
 
 @media (min-width: 768px) {
   .footer__container {
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 34px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+  }
+
+  .footer__logo-text {
+    padding: 0;
   }
 
   .footer__line {
     width: 0;
     height: 0;
     background: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__container {
+    padding-top: 29px;
+    padding-left: 10px;
+    padding-right: 12px;
+    padding-bottom: 27px;
   }
 }

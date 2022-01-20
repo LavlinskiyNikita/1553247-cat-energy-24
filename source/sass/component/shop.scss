@@ -1,3 +1,23 @@
 .shop__title {
   margin: 0;
 }
+
+.title--shop {
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+@media (min-width: 768px) {
+  .title--shop {
+    margin-top: 48px;
+    margin-bottom: 66px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title--shop {
+    margin-top: 60px;
+    margin-bottom: 59px;
+  }
+}

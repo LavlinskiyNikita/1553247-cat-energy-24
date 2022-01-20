@@ -1,7 +1,7 @@
 .present-case {
-  margin-top: 35px;
+  margin-top: 33px;
   text-decoration: none;
-  background: url("../img/Rectangle17.png");
+  background: url("../img/present.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,12 +12,14 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-bottom: 43px;
+  padding-bottom: 47px;
   padding-top: 59px;
 }
 
 .present-case__ggg {
   color: $white;
+  width: 165px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -28,12 +30,19 @@
     background: url("../img/group2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 120px;
+    padding: 0;
+    padding-left: 79px;
+    padding-right: 82px;
+    margin-left: 0;
+    margin-right: 10px;
+    height: 203px;
+    margin-top: 65px;
   }
 
   .present-case__text {
     width: 160px;
     text-align: left;
+    margin-right: 44px;
   }
 
   .present-case__ggg {
@@ -50,18 +59,22 @@
   .present-case {
     box-sizing: border-box;
     margin-top: 0;
+    margin-left: -6px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../../../img/Rectangle17.png");
+    background: url("../img/Rectangle17.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 50px 0;
+    padding: 0;
+    padding-top: 59px;
+    padding-bottom: 45px;
     height: 100%;
   }
 
   .present-case__text {
     width: 160px;
     text-align: center;
+    margin-right: 0;
   }
 }

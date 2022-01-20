@@ -1,9 +1,14 @@
 .column {
   box-sizing: border-box;
-  padding: 15px;
+  padding: 19px;
+  padding-top: 5px;
   width: 100%;
   background: $basic-grey;
   margin-bottom: 20px;
+
+  &:not(:first-child) {
+    margin-bottom: 0;
+  }
 }
 
 .column--limming {
@@ -17,7 +22,8 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 35px;
+    top: 26px;
+    left: 22px;
   }
 }
 
@@ -29,7 +35,8 @@
     background-image: url("../img/svg/vectortigr.svg");
     background-repeat: no-repeat;
     background-position: 60% 50%;
-    top: 35px;
+    top: 26px;
+    left: 12px;
     width: 67px;
     height: 50px;
     position: absolute;
@@ -44,9 +51,9 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
-  padding-top: 5px;
+  padding-top: 4px;
 
-  margin-left: 70px;
+  margin-left: 72px;
   margin-bottom: 29px;
 }
 
@@ -55,7 +62,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   color: $special_dark-grey;
   margin-bottom: 23px;
 }
@@ -64,7 +71,7 @@
   width: 100%;
   height: 1px;
   background: $basic-grey-1;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .column__link {
@@ -97,10 +104,14 @@
 @media (min-width: 768px) {
   .column {
     box-sizing: border-box;
-    padding: 77px 62px 53px 52px;
+    padding: 40px 55px 59px 52px;
     width: 100%;
     background: $basic-grey;
-    margin-bottom: 20px;
+    margin-bottom: 31px;
+
+    &:not(:first-child) {
+      margin-bottom: -9px;
+    }
   }
 
   .column--limming {
@@ -114,9 +125,10 @@
       width: 200px;
       height: 211px;
       position: absolute;
-      top: 50%;
-      right: 62px;
-      transform: translateY(-50%);
+      top: 49%;
+      right: 61px;
+      left: auto;
+      transform: translateY(-47%);
     }
   }
 
@@ -131,8 +143,9 @@
       width: 268px;
       height: 200px;
       position: absolute;
-      top: 50%;
-      right: 62px;
+      left: auto;
+      top: 51%;
+      right: 28px;
       transform: translateY(-50%);
     }
   }
@@ -147,7 +160,7 @@
 
     text-transform: uppercase;
     color: $black;
-    padding-top: 5px;
+    padding-top: 0;
 
     margin-left: 0;
     margin-bottom: 24px;
@@ -158,14 +171,14 @@
   }
 
   .column__desc {
-    width: calc(100% - 290px);
+    width: calc(100% - 260px);
     font-family: $descr-font;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: $special_dark-grey;
-    margin-bottom: 23px;
+    margin-bottom: 59px;
   }
 
   .column__outline {
@@ -193,8 +206,8 @@
       display: inline-block;
       width: 32px;
       height: 10px;
-      margin-top: 6px;
-      margin-left: 15px;
+      margin-top: 3px;
+      margin-left: 25px;
     }
   }
 }
@@ -203,9 +216,10 @@
   .column {
     box-sizing: border-box;
     padding: 45px 52px;
+    padding-bottom: 61px;
     width: 570px;
     background: $basic-grey;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .column--limming {
@@ -219,9 +233,9 @@
       width: 100px;
       height: 106px;
       position: absolute;
-      top: 100px;
+      top: 96px;
       right: 0;
-      left: 52px;
+      left: 53px;
       transform: translateY(-50%);
     }
   }
@@ -239,7 +253,7 @@
       position: absolute;
       top: 100px;
       right: 0;
-      left: 22px;
+      left: 23px;
       transform: translateY(-50%);
     }
   }
@@ -252,14 +266,15 @@
     line-height: 36px;
     text-transform: uppercase;
     color: $black;
-    padding-top: 5px;
+    padding-top: 34px;
 
-    margin-left: 134px;
-    margin-bottom: 73px;
+    margin: 0;
+    margin-left: 161px;
+    margin-bottom: 75px;
   }
 
   .column__text {
-    margin-bottom: 27px;
+    margin-bottom: 33px;
   }
 
   .column__desc {
@@ -271,5 +286,28 @@
     line-height: 24px;
     color: $special_dark-grey;
     margin-bottom: 23px;
+  }
+
+  .column__link {
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black;
+
+    &::after {
+      content: "";
+      background-image: url("../img/svg/icon_arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      position: absolute;
+      display: inline-block;
+      width: 32px;
+      height: 10px;
+      margin-top: 3px;
+      margin-left: 28px;
+    }
   }
 }

@@ -1,8 +1,9 @@
 .first-screen-section {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
-.title--main-screen {
+.first-screen__title--main-screen {
+  letter-spacing: 3px;
   font-style: normal;
   font-size: 30px;
   line-height: 36px;
@@ -11,11 +12,12 @@
 }
 
 .first-screen__title {
-  margin-top: 27px;
+  margin-top: 30px;
   margin-bottom: 25px;
 }
 
 .first-screen__text {
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -38,20 +40,23 @@
   width: 100%;
   padding: 7px 0;
   color: $white;
-  font-size: 14px;
+  font-size: 17px;
   text-align: center;
   text-decoration: none;
-  font-family: $header-link;
+  font-family: $main-font;
+  font-weight: 400;
+  margin-top: 1px;
 }
 
 @media (min-width: 768px) {
   .first-screen-section {
     width: 709px;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .first-screen {
-    padding-left: 89px;
+    padding-left: 88px;
     position: relative;
     min-height: 770px;
   }
@@ -61,7 +66,9 @@
     margin-bottom: 41px;
   }
 
-  .title--main-screen {
+  .first-screen__title--main-screen {
+    margin-top: 50px;
+    letter-spacing: 0;
     width: 414px;
     line-height: 60px;
     font-size: 60px;
@@ -78,13 +85,13 @@
     text-align: justify;
     text-transform: uppercase;
     color: $black;
-    margin-bottom: 29px;
+    margin-bottom: 50px;
   }
 
   .first-screen__image {
     position: absolute;
-    top: 190px;
-    left: 7px;
+    top: 201px;
+    left: -2px;
     z-index: -1;
   }
 
@@ -92,12 +99,13 @@
     display: inline-block;
     background: $basic-green;
     width: 244px;
-    padding: 14px 16px;
+    padding: 13px 19px;
     color: $white;
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     text-decoration: none;
-    font-family: $header-link;
+    text-transform: uppercase;
+    font-family: $main-font;
 
     &:hover {
       background: $basic-green-2;
@@ -114,17 +122,19 @@
   .first-screen-section {
     width: 1244px;
     margin: 0 auto;
-    margin-bottom: 230px;
+    margin-bottom: 265px;
     padding-right: 0;
   }
 
   .first-screen {
     position: relative;
-    padding-left: 20px;
+    padding-left: 51px;
+    min-height: auto;
   }
 
   .first-screen__title {
-    padding-top: 170px;
+    padding-top: 48px;
+    margin-bottom: 42px;
   }
 
   .first-screen__text {
@@ -133,8 +143,8 @@
 
   .first-screen__image {
     position: absolute;
-    top: 120px;
-    left: 450px;
+    top: 15px;
+    left: 420px;
     z-index: -1;
   }
 }

@@ -1,0 +1,26 @@
+.weight-loss__conent {
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .weight-loss {
+    margin-bottom: 52px;
+  }
+
+  .weight-loss__conent {
+    margin-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .weight-loss {
+    margin-bottom: 71px;
+  }
+
+  .weight-loss__conent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -2,9 +2,12 @@
   width: 100%;
   border: 0;
   background: transparent;
+  margin-bottom: 17px;
 }
 
 .product__link-plus {
+  margin-block-end: 0;
+  margin-block-start: 0;
   text-decoration: none;
   padding: 10px 0;
   display: inline-block;
@@ -18,8 +21,39 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special-dark-grey;
+  margin-bottom: 52px;
 
   &:hover {
     background: $basic-grey-2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .product-btn {
+    width: auto;
+    box-sizing: border-box;
+    padding: 0 38px;
+  }
+
+  .product__link-plus {
+    text-decoration: none;
+    margin-bottom: 39px;
+    padding: 10px 0;
+    display: inline-block;
+    background: $gray;
+    width: 89%;
+
+    font-family: $header-link;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+    margin-left: -23px;
+
+    &:hover {
+      background: $basic-grey-2;
+    }
   }
 }

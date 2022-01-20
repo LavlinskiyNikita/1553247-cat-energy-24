@@ -2,10 +2,11 @@
   .products {
     width: 708px;
     margin: 0 auto;
-    padding-top: 82px;
+    padding-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
+    margin-bottom: 27px;
   }
 }
 
@@ -13,7 +14,9 @@
   .products {
     width: 100%;
     display: grid;
-    grid-column-gap: 80px;
+    grid-column-gap: 53px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 37px;
+    padding-left: 13px;
   }
 }

@@ -19,6 +19,7 @@
 
 //block
 @import "./component/block/menu.scss";
+@import "./component/block/weight-loss.scss";
 @import "./component/block/column.scss";
 @import "./component/block/work.scss";
 @import "./component/block/result.scss";
@@ -35,6 +36,7 @@
 @import "./component/block/additional-goods.scss";
 @import "./component/block/add-product-conent.scss";
 @import "./component/block/product-btn.scss";
+@import "./component/block/address.scss";
 
 
 .page-body {
@@ -50,3 +52,9 @@ ul {
 .hidden-text {
   display: none;
 }
+
+// *,
+// *::before,
+// *::after {
+//   outline: 1px solid #ff0000;
+// }

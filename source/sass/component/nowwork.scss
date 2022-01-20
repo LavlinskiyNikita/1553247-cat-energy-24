@@ -3,9 +3,45 @@
 }
 
 .example__descr {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .now-work__title {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
+}
+
+.title--work {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .now-work {
+    margin-bottom: 41px;
+  }
+
+  .example__descr {
+    width: 680px;
+    padding-left: 10px;
+    margin-bottom: 52px;
+  }
+
+  .now-work__title {
+    margin-bottom: 53px;
+  }
+
+  .title--work {
+    margin: 0;
+    padding-left: 10px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .now-work {
+    margin-bottom: 32px;
+  }
+
+  .title--work {
+    padding-left: 10px;
+  }
 }

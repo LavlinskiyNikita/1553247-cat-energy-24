@@ -1,8 +1,10 @@
 .additional-goods {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
+  padding-top: 0;
 }
 
 .additional-goods__title-text {
+  margin: 0;
   position: relative;
   font-family: $main-font;
   background: $white;
@@ -24,11 +26,22 @@
 
 @media (min-width: 768px) {
   .additional-goods {
-    margin-bottom: 70px;
+    margin-bottom: 94px;
   }
 
   .additional-goods__title-text {
+    padding-left: 47px;
     font-size: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 45%;
+      height: 2px;
+      right: -20px;
+      top: 50%;
+      background: $basic-green;
+    }
   }
 }
 
@@ -38,6 +51,7 @@
   }
 
   .additional-goods__title-text {
+    padding-left: 0;
     font-family: $main-font;
     background: none;
     padding-right: 10px;

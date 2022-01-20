@@ -1,8 +1,9 @@
 .result {
+  margin-top: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .result__item {
@@ -17,7 +18,7 @@
 .result__block {
   width: 85px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 9px;
   text-align: center;
   background: #eaeaea;
 }
@@ -26,13 +27,16 @@
   font-family: $main-font;
   font-size: 24px;
   color: $black;
-  margin-bottom: 7px;
+  margin-top: 0;
+  margin-bottom: -1px;
 }
 
 .result__text {
+  width: 82px;
   font-family: $descr-font;
   font-size: 12px;
   color: $special-dark-grey;
+  margin-top: 0;
 }
 
 .result__text-price {
@@ -43,15 +47,19 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
   .result__bloclk-main {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .result__item {
@@ -59,7 +67,7 @@
     box-sizing: border-box;
     border-radius: 3px;
     width: 162px;
-    height: 56px;
+    height: 72px;
     background: $white;
     margin-right: 42px;
   }
@@ -74,19 +82,22 @@
 
   .result__meaning {
     font-family: $main-font;
-    font-size: 24px;
+    font-size: 28px;
     color: $black;
     margin-top: 10px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
 
   .result__text {
+    width: 140px;
     padding: 0;
     margin: 0;
+    font-size: 14px;
   }
 
   .result__spending {
     width: 174px;
+    margin-top: -6px;
     margin-left: auto;
   }
 
@@ -95,13 +106,20 @@
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     text-align: right;
     text-transform: uppercase;
+    margin-top: -30px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 1440px) {
+  .result {
+    margin-bottom: 100px;
+    margin-left: 0;
+  }
+
   .result__bloclk-main {
     list-style: none;
     display: flex;
@@ -109,7 +127,7 @@
     flex-direction: column;
     justify-content: 0;
     margin-bottom: 40px;
-    margin-top: 400px;
+    margin-top: 386px;
   }
 
   .result__spending {
@@ -118,17 +136,33 @@
   }
 
   .example__descr {
+    width: 450px;
     position: absolute;
-    top: 250px;
+    top: 220px;
+    padding-left: 0;
   }
 
   .result__item {
     background: $basic-grey-3;
+    height: 71px;
   }
 
   .result__block {
     background: $basic-grey-3;
   }
+
+  .result__meaning {
+    font-size: 29px;
+    margin-top: 11px;
+    margin-bottom: 7px;
+  }
+
+  .result__text {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+
 
   .result__text-price {
     font-family: $main-font;
@@ -138,5 +172,10 @@
     line-height: 20px;
     text-align: left;
     text-transform: uppercase;
+    margin-left: 2px;
+
+    span {
+      margin-left: 58px;
+    }
   }
 }

@@ -1,18 +1,20 @@
 .form {
-  margin-bottom: 32px;
+  margin-bottom: 38px;
 }
 
 .form__fieldset {
+  padding: 0;
   border: 0;
 }
 
 .form-section__title {
-  margin-top: 27px;
-  margin-bottom: 37px;
+  margin-top: -9px;
+  margin-bottom: 6px;
 }
 
 .form-section__subitile {
-  margin-bottom: 39px;
+  width: 82%;
+  margin-bottom: 40px;
 }
 
 .form-section__text {
@@ -48,15 +50,19 @@
 }
 
 .form__button-submit {
+  font-family: $header-link;
+  text-transform: uppercase;
   border: 0;
   width: 100%;
   padding: 7px 0;
   background: $basic-green;
   color: $white;
-  font-size: 16px;
+  font-size: 15px;
+  margin-bottom: 23px;
 }
 
 .form__mandatory {
+  margin: 0;
   font-family: $descr-font;
   font-style: normal;
   font-weight: normal;
@@ -68,24 +74,26 @@
 
 @media (min-width: 768px) {
   .form {
-    margin-bottom: 72px;
-    padding: 0 39px;
+    margin-bottom: 49px;
+    padding: 0 48px;
   }
 
   .form-section__title {
-    padding: 0 39px;
-    margin-top: 64px;
-    margin-bottom: 54px;
-  }
-
-  .form__mandatory {
-    text-align: left;
+    padding: 0 49px;
+    margin-top: 46px;
+    margin-bottom: 52px;
   }
 
   .form-section__subitile {
-    padding-left: 39px;
+    padding-left: 50px;
     padding-right: 39px;
-    margin-bottom: 39px;
+    margin-bottom: 69px;
+  }
+
+  .form-section__text {
+    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form__legend {
@@ -115,31 +123,51 @@
     padding: 5px 40px;
     margin-left: -40px;
   }
+
+  .form__button-submit {
+    font-size: 19px;
+    padding: 13px 0;
+  }
+
+  .form__mandatory {
+    text-align: left;
+    margin-top: 17px;
+    margin-left: 1px;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1440px) {
   .form {
-    margin-bottom: 82px;
+    margin-bottom: 65px;
     padding: 0;
   }
 
   .form-section__title {
     padding: 0;
-    margin-top: 64px;
+    margin-top: 60px;
     margin-bottom: 56px;
+    padding-left: 12px;
+  }
+
+  .form-section__text {
+    width: 35%;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 11px;
   }
 
   .form-section__subitile {
     padding-left: 0;
     padding-right: 39px;
-    margin-bottom: 39px;
+    margin-bottom: 65px;
   }
 
   .form__legend {
     position: relative;
     display: inline-block;
     font-family: $main-font;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 26px;
     margin-bottom: 76px;
     color: $black;
@@ -158,15 +186,22 @@
   }
 
   .form__legend-span {
-    margin-left: -40px;
+    margin-left: -28px;
     background: $white;
     padding: 5px 40px;
   }
 
+  .form__mandatory {
+    font-size: 16px;
+    margin-left: 6px;
+  }
+
   .form__button-submit {
+    box-sizing: border-box;
     border: 0;
-    width: 100%;
-    padding: 7px 0;
+    width: 97%;
+    padding: 25px 0;
+    padding-right: 10px;
     background: $basic-green;
 
     font-family: $main-font;

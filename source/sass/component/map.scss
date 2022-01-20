@@ -1,32 +1,3 @@
-.address__block {
-  background: $gray;
-}
-
-.address__content {
-  padding-top: 27px;
-  padding-bottom: 27px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.address__invitation {
-  max-width: 140px;
-  font-family: $main-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-}
-
-.address__address-element {
-  text-align: right;
-  max-width: 145px;
-  font-family: $descr-font;
-  font-size: 14px;
-  line-height: 20px;
-  color: $special_dark-grey;
-}
-
 .map__iframe {
   iframe {
     border: 0;
@@ -36,24 +7,6 @@
 }
 
 @media (min-width: 768px) {
-  .address__invitation {
-    max-width: 140px;
-    font-family: $main-font;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $black-2;
-  }
-
-  .address__address-element {
-    text-align: right;
-    max-width: 145px;
-    font-family: $descr-font;
-    font-size: 16px;
-    line-height: 20px;
-    color: $special_dark-grey;
-  }
-
   .map__iframe {
     iframe {
       border: 0;
@@ -66,31 +19,6 @@
 @media (min-width: 1440px) {
   .map {
     position: relative;
-  }
-
-  .address__block {
-    padding: 0;
-  }
-
-  .address__content {
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 565px;
-    padding: 56px 80px;
-    height: 198px;
-    display: flex;
-    justify-content: space-between;
-    background: $white;
-  }
-
-  .address__invitation {
-    line-height: 26px;
-  }
-
-  .address__text {
-    margin: 0;
   }
 
   .map__iframe {
