@@ -10,6 +10,7 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
+import svgstore  from 'gulp-svgstore';
 import del from 'del';
 
 // Styles
@@ -69,9 +70,18 @@ const createWebp = () => {
 //svg0
 
 const svgO = () => {
-  return gulp.src('source/img/**/*.svg')
+  return gulp.src(['source/img/**/*.svg', '!source/img/svg-icon/social/*.svg', '!source/img/sprite.svg'])
   .pipe(svgo())
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
+}
+
+const Sprite = () => {
+  return gulp.src('source/img/svg-icon/social/*.svg')
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
 }
 
 //copy
@@ -132,6 +142,7 @@ export const build = gulp.series(
     styles,
     html,
     scripts,
+    Sprite,
     svgO,
     createWebp
   ),
@@ -145,6 +156,7 @@ export default  gulp.series(
     styles,
     html,
     scripts,
+    Sprite,
     svgO,
     createWebp
   ),
