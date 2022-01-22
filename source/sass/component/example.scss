@@ -82,6 +82,7 @@
 }
 
 .example__slider-range::-webkit-slider-thumb {
+  display: none;
   box-sizing: border-box;
   appearance: none;
   background: $basic-green;
@@ -205,6 +206,7 @@
   }
 
   .example__slider-range::-webkit-slider-thumb {
+    display: block;
     box-sizing: border-box;
     appearance: none;
     width: 34px;
