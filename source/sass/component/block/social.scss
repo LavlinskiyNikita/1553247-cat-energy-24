@@ -10,7 +10,7 @@
 
 .social__item {
   svg {
-    fill: none;
+    fill: #666666;
   }
 
   &:hover {
@@ -26,7 +26,7 @@
   display: inline-block;
   padding: 18px;
 
-  .social--vk {
+  .social__vk {
     width: 23px;
     height: 16px;
 
@@ -36,7 +36,7 @@
     }
   }
 
-  .social--insta {
+  .social__insta {
     width: 16px;
     height: 16px;
 
@@ -46,7 +46,7 @@
     }
   }
 
-  .social--book {
+  .social__book {
     width: 22px;
     height: 22px;
 

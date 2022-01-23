@@ -13,8 +13,8 @@ if (exampleSlider) {
     const sliderRange = document.querySelector(".example__slider-range");
 
     //картинки
-    const imageBefore = document.querySelector(".example__image--after");
-    const imageAfter = document.querySelector(".example__image--before");
+    const imageBefore = document.querySelector(".example__image-after");
+    const imageAfter = document.querySelector(".example__image-before");
 
     sliderRange.addEventListener('input', () => {
       imageBefore.style.width = `${100 - sliderRange.value}%`;
