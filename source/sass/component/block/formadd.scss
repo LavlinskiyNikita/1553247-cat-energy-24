@@ -42,7 +42,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
-  background: url("../img/svg/check.svg");
+  background-image: url("../img/svg/check.svg");
+  background-color: $basic-grey;
   opacity: 0;
   width: 18px;
   height: 14px;
@@ -101,7 +102,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    background: url("../img/svg/check-table.svg");
+    background-image: url("../img/svg/check-table.svg");
+    background-color: $basic-grey;
     opacity: 0;
     width: 24px;
     height: 18px;

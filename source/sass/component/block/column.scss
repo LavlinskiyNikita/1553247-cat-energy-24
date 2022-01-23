@@ -19,6 +19,7 @@
     background-image: url("../img/svg/vectorcar.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-color: $basic-grey;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -35,6 +36,7 @@
     background-image: url("../img/svg/vectortigr.svg");
     background-repeat: no-repeat;
     background-position: 60% 50%;
+    background-color: $basic-grey;
     top: 26px;
     left: 12px;
     width: 67px;
@@ -88,6 +90,7 @@
     background-image: url("../img/svg/icon_arrow.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-color: $basic-grey;
     position: absolute;
     display: inline-block;
     width: 32px;
@@ -122,6 +125,7 @@
       background-image: url("../img/svg/vectorcar_x2.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
+      background-color: $basic-grey;
       width: 200px;
       height: 211px;
       position: absolute;
@@ -140,6 +144,7 @@
       background-image: url("../img/svg/vectortigr_x2.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
+      background-color: $basic-grey;
       width: 268px;
       height: 200px;
       position: absolute;
@@ -202,6 +207,7 @@
       background-image: url("../img/svg/icon_arrow.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
+      background-color: $basic-grey;
       position: absolute;
       display: inline-block;
       width: 32px;

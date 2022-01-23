@@ -1,10 +1,11 @@
 .present-case {
   margin-top: 33px;
   text-decoration: none;
-  background: url("../img/present.png");
+  background-image: url("../img/present.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: $black;
   width: 100%;
   height: 290px;
   text-align: center;
@@ -14,6 +15,14 @@
   box-sizing: border-box;
   padding-bottom: 47px;
   padding-top: 59px;
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .present-case::after {
+      background-image: url("../img/present@2x.png");
+      background-size: 1338px auto;
+    }
+  }
 }
 
 .present-case__ggg {
@@ -27,9 +36,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: url("../img/group2.jpg");
+    background-image: url("../img/group2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: $black;
     padding: 0;
     padding-left: 79px;
     padding-right: 82px;
@@ -37,6 +47,14 @@
     margin-right: 10px;
     height: 203px;
     margin-top: 65px;
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .present-case::after {
+        background-image: url("../img/group@2x.png");
+        background-size: 1338px auto;
+      }
+    }
   }
 
   .present-case__text {
@@ -63,13 +81,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../img/Rectangle17.png");
+    background-image: url("../img/Rectangle17.png");
     background-size: cover;
+    background-color: $black;
     background-repeat: no-repeat;
     padding: 0;
     padding-top: 59px;
     padding-bottom: 45px;
     height: 100%;
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      .present-case::after {
+        background-image: url("../img/Rectangle17@2x.png");
+        background-size: 1338px auto;
+      }
+    }
   }
 
   .present-case__text {

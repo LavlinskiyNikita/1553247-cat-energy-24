@@ -1,18 +1,14 @@
-// slider с котами
 const windowWidth = window.innerWidth ;
 const TABLET_DESKTOP = 768;
 const exampleSlider = document.querySelector(".example__slider");
 
 if (exampleSlider) {
   if (TABLET_DESKTOP <= windowWidth) {
-    // кнопки
     const btnBefore = document.querySelector(".example__button--before");
     const btnAfter = document.querySelector(".example__button--after");
 
-    //слайдер
     const sliderRange = document.querySelector(".example__slider-range");
 
-    //картинки
     const imageBefore = document.querySelector(".example__image-after");
     const imageAfter = document.querySelector(".example__image-before");
 
@@ -32,8 +28,6 @@ if (exampleSlider) {
     });
   }
 }
-
-// меню
 
 const btnHumburger = document.querySelector(".humburger");
 const menu = document.querySelector(".menu__list");
