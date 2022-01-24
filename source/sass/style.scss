@@ -7,11 +7,14 @@
 @import "./global/title.scss";
 
 //component
+@import "./component/firstscreen-section.scss";
 @import "./component/firstscreen.scss";
 @import "./component/nowwork.scss";
+@import "./component/example-section.scss";
 @import "./component/example.scss";
 @import "./component/map.scss";
 @import "./component/footer.scss";
+@import "./component/form-section.scss";
 @import "./component/form.scss";
 @import "./component/shop.scss";
 @import "./component/weight-loss.scss";
@@ -22,31 +25,20 @@
 @import "./component/block/weight-loss.scss";
 @import "./component/block/column.scss";
 @import "./component/block/work.scss";
+@import "./component/block/result-block.scss";
 @import "./component/block/result.scss";
 @import "./component/block/social.scss";
-@import "./component/block/htmlacademy.scss";
-@import "./component/block/formnamecat.scss";
-@import "./component/block/formconact.scss";
-@import "./component/block/formcoment.scss";
-@import "./component/block/formadd.scss";
+@import "./component/block/html-academy.scss";
 @import "./component/block/product.scss";
 @import "./component/block/add-product.scss";
 @import "./component/block/present-case.scss";
 @import "./component/block/humburger.scss";
 @import "./component/block/additional-goods.scss";
-@import "./component/block/add-product-conent.scss";
+@import "./component/block/add-product-content.scss";
 @import "./component/block/product-btn.scss";
 @import "./component/block/address.scss";
 
-
-.html {
-  height: 100%;
-}
-
 .page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   padding: 0;
   margin: 0;
   min-width: 320px;

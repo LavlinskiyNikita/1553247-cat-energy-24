@@ -1,5 +1,11 @@
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .add-product-conent {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .add-product-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 80px;

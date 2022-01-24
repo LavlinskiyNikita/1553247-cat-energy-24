@@ -30,19 +30,19 @@
 }
 
 .humburger--active {
-  .line-one {
+  .humburger--line-one {
     transition: all 0.3s ease-in-out;
     top: 50%;
     transform: rotate(-45deg);
   }
 
-  .line-ftree {
+  .humburger--line-ftree {
     transition: all 0.2s ease;
     right: -20px;
     opacity: 0;
   }
 
-  .line-four {
+  .humburger--line-four {
     transition: all 0.3s ease-in-out;
     top: 50%;
     transform: rotate(45deg);

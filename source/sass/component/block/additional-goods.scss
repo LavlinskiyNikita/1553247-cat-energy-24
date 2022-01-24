@@ -3,6 +3,12 @@
   padding-top: 0;
 }
 
+.additional-goods__title {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 36px;
+}
+
 .additional-goods__title-text {
   margin: 0;
   position: relative;
@@ -27,6 +33,10 @@
 @media (min-width: 768px) {
   .additional-goods {
     margin-bottom: 94px;
+  }
+
+  .additional-goods__title {
+    margin-bottom: 85px;
   }
 
   .additional-goods__title-text {
