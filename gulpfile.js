@@ -146,9 +146,6 @@ export const build = gulp.series(
     svgO,
     createWebp
   ),
-  gulp.series(
-    server,
-  )
 );
 
 export default  gulp.series(
