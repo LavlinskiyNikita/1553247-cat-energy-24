@@ -1,8 +1,6 @@
 //
 
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid $basic-grey-1;
   background: $white;
 }
@@ -13,12 +11,13 @@
 }
 
 .header--cat::after {
-  content: "";
+  content: none;
   background-image: url("../img/catGreen.png");
   background-color: $basic-grey;
   width: 100%;
   height: 304px;
-  top: 64px;
+  top: -27px;
+  left: 0;
   position: absolute;
   z-index: -11;
 

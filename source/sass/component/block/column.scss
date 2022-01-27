@@ -101,6 +101,10 @@
 
   &:hover {
     opacity: 0.3;
+
+    &::after {
+      background-image: url("../img/svg/icon__arrow-hover.svg");
+    }
   }
 }
 
@@ -275,7 +279,7 @@
     padding-top: 34px;
 
     margin: 0;
-    margin-left: 161px;
+    margin-left: 162px;
     margin-bottom: 75px;
   }
 
@@ -291,7 +295,7 @@
     font-size: 16px;
     line-height: 24px;
     color: $special_dark-grey;
-    margin-bottom: 23px;
+    margin-bottom: -1px;
   }
 
   .column__link {

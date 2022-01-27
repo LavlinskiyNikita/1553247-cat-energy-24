@@ -2,6 +2,10 @@
   .add-product-conent {
     padding: 0 30px;
   }
+
+  .add-product-content__block {
+    padding: 0 10px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -11,5 +15,10 @@
     grid-gap: 80px;
     padding-right: 100px;
     padding-left: 100px;
+  }
+
+  .add-product-content__block {
+    padding: 0;
+    display: contents;
   }
 }

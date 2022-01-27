@@ -8,7 +8,7 @@
 
 //component
 @import "./component/first-screen-section.scss";
-@import "./component/firstscreen.scss";
+@import "./component/first-screen.scss";
 @import "./component/nowwork.scss";
 @import "./component/example-section.scss";
 @import "./component/example.scss";
@@ -52,6 +52,14 @@ ul {
   display: none;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
 // *,
 // *::before,
 // *::after {

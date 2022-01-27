@@ -21,6 +21,7 @@
   font-size: 16px;
   text-transform: uppercase;
   line-height: 16px;
+  margin-left: 1px;
 }
 
 .add-product__description {
@@ -61,6 +62,15 @@
   text-decoration: none;
 
   color: $white;
+
+  &:hover {
+    background: $basic-green-2;
+  }
+
+  &:active {
+    background: $basic-green-2;
+    color: #ffffff4d;
+  }
 }
 
 @media (min-width: 768px) {
@@ -98,7 +108,7 @@
   }
 
   .add-product__price {
-    margin-left: 54px;
+    margin-left: 50px;
   }
 
   .add-product__title {

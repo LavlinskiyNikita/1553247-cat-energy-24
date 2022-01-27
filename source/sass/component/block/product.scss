@@ -105,6 +105,15 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  &:hover {
+    background: $basic-green-2;
+  }
+
+  &:active {
+    background: $basic-green-2;
+    color: #ffffff4d;
+  }
 }
 
 .product__block-descr {
@@ -116,7 +125,7 @@
   font-family: $header-link;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;

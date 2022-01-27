@@ -12,7 +12,7 @@ if (exampleSlider) {
     const imageBefore = document.querySelector(".example__image-after");
     const imageAfter = document.querySelector(".example__image-before");
 
-    sliderRange.addEventListener('input', () => {
+    sliderRange.addEventListener("input", () => {
       imageBefore.style.width = `${100 - sliderRange.value}%`;
       imageAfter.style.width =  `${sliderRange.value}%`;
     });
@@ -31,6 +31,9 @@ if (exampleSlider) {
 
 const btnHumburger = document.querySelector(".humburger");
 const menu = document.querySelector(".menu__list");
+const menuNoJs = document.querySelector(".menu__list-no-js");
+
+menuNoJs.classList.remove("menu__list-no-js")
 
 btnHumburger.addEventListener('click', () => {
   menu.classList.toggle("menu__list--active");

@@ -5,22 +5,36 @@
     <title>Кэт энерджи главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="style.css" as="style">
+
   </head>
   <body class="page-body">
     <header class="header header--cat">
       <div class="container">
         <nav class="menu">
-          <a class="menu__logo-link">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="./img/svg/logo/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="./img/svg/logo/logo-tablet.svg">
-              <img src="./img/svg/logo/logo-phone.svg" alt="car Energy">
-            </picture>
-          </a>
-          <a class="menu__logo-text">
-            <img src="./img/svg/catenergy.svg" alt="car Energy" />
-          </a>
-          <ul class="menu__list menu__list--active">
+          <div class="menu__top">
+            <a class="menu__logo-link">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/svg/logo/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/svg/logo/logo-tablet.svg">
+                <img src="./img/svg/logo/logo-phone.svg" alt="car Energy">
+              </picture>
+            </a>
+            <a class="menu__logo-text">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/svg/desktop_logo-text.svg">
+                <source media="(min-width: 768px)" srcset="./img/svg/catenergy.svg">
+                <img src="./img/svg/catenergy.svg" alt="car Energy">
+              </picture>
+            </a>
+            <button type="button" class="humburger " aria-label="открытие меню">
+              <span class="humburger__line humburger__line--one"></span>
+              <span class="humburger__line humburger__line--ftree"></span>
+              <span class="humburger__line humburger__line--four"></span>
+            </button>
+          </div>
+
+          <ul class="menu__list menu__list-no-js">
             <li class="menu__item">
               <a class="menu__link menu__link-main menu__link--current menu__link--main-link">главная</a>
             </li>
@@ -31,16 +45,11 @@
               <a href="./form.html" class="menu__link menu__link-main">подбор программы</a>
             </li>
           </ul>
-          <button type="button" class="humburger humburger--active">
-            <span class="humburger__line humburger--line-one"></span>
-            <span class="humburger__line humburger--line-ftree"></span>
-            <span class="humburger__line humburger--line-four"></span>
-          </button>
         </nav>
       </div>
     </header>
     <main class="main">
-      <div class="container first-screen-section">
+      <div class="container first-screen-section first-screen-section--cat">
         <div class="first-screen">
           <div class="first-screen__title">
             <h1 class="title first-screen__title-main-screen">Функциональное питание для котов</h1>
@@ -51,7 +60,7 @@
             <source media="(min-width: 768px)" srcset="./img/index-can/index-can-tablet.png 1x, ./img/index-can/index-can-tablet@2x.png 2x">
             <img src="./img/index-can/index-can-mobile.png" alt="tavar" srcset="./img/index-can/index-can-mobile@2x.png 2x"/>
           </picture>
-          <a href="./form.html" class="first-screen__link">подобрать программу</a>
+          <a href="./form.html" class="first-screen__link" aria-label="перейти на страницу подобрать программу">подобрать программу</a>
         </div>
       </div>
       <section class="weight-loss container">
@@ -66,7 +75,7 @@
               </p>
             </div>
             <div class="column__outline"></div>
-            <a href="./form.html" class="column__link">каталог slim</a>
+            <a href="./form.html" class="column__link" aria-label="перейти на страницу каталога">каталог slim</a>
           </div>
 
           <div class="column column--mass">
@@ -78,13 +87,13 @@
               </p>
             </div>
             <div class="column__outline"></div>
-            <a href="./form.html" class="column__link">каталог pro</a>
+            <a href="./form.html" class="column__link" aria-label="перейти на страницу каталога">каталог pro</a>
           </div>
         </div>
       </section>
       <section class="now-work container">
           <div class="now-work__title">
-            <h2 class="title now-work--title">Как это работает</h2>
+            <h2 class="title now-work__text now-work__text--title">Как это работает</h2>
           </div>
           <ul class="work">
             <li class="work__item">
@@ -128,10 +137,10 @@
       <section class="example-section ">
         <div class="container">
           <div class="example">
-            <div class="example__title">
+            <div class="example__block-left">
+              <div class="example__title">
                 <h2 class="title example-title">Живой пример</h2>
               </div>
-            <div class="example__info">
               <div class="example__descr">
                 <p class="example__text">
                   Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный
@@ -140,28 +149,30 @@
                   спит по 16 часов в день.
                 </p>
               </div>
-              <div class="example__information">
-                <div class="result-block">
-                  <ul class="result">
-                      <li class="result__item">
-                      <div class="result__block">
-                        <h3 class="result__meaning">5 КГ</h3>
-                        <p class="result__text">снижение веса</p>
-                      </div>
-                    </li>
+              <div class="result-block">
+                <ul class="result">
                     <li class="result__item">
-                      <div class="result__block">
-                        <h3 class="result__meaning">60 ДНЕЙ</h3>
-                        <p class="result__text">затрачено времени</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="result-block__spending">
-                    <p class="result-block__text-price">
-                      Затраты на питание: <span>15 000</span> РУБ.
-                    </p>
-                  </div>
+                    <div class="result__block">
+                      <h3 class="result__meaning">5 КГ</h3>
+                      <p class="result__text">снижение веса</p>
+                    </div>
+                  </li>
+                  <li class="result__item">
+                    <div class="result__block">
+                      <h3 class="result__meaning">60 ДНЕЙ</h3>
+                      <p class="result__text">затрачено времени</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="result-block__spending">
+                  <p class="result-block__text-price">
+                    Затраты на питание: <span>15 000</span> РУБ.
+                  </p>
                 </div>
+              </div>
+            </div>
+            <div class="example__info">
+              <div class="example__information">
                 <div class="example__slider">
                   <div class="example__image-slider">
                     <div class="example__image-after">
@@ -180,11 +191,11 @@
                     </div>
                   </div>
                   <div class="example__range">
-                    <button class="example__button example__button--before">было</button>
+                    <button class="example__button example__button--before" aria-label="It was">было</button>
                     <div class="example__block-range">
                       <input class="example__slider-range" type="range" min="0" max="100" value="50" step="1" />
                     </div>
-                    <button class="example__button example__button--after">стало</button>
+                    <button class="example__button example__button--after" aria-label="became">стало</button>
                   </div>
                 </div>
               </div>
@@ -217,7 +228,10 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638012513489!5m2!1sru!2sru"
               allowfullscreen=""
               loading="lazy"
+              aria-label="map"
             ></iframe>
+            <div class="map__image">
+            </div>
           </div>
         </div>
       </section>
@@ -249,21 +263,21 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="" class="social__link" aria-label="link vk">
                 <svg viewBox="0 0 23 16" xmlns="http://www.w3.org/2000/svg" class="social__vk">
                   <use  xlink:href="img/sprite.svg#icon_vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link">
+              <a href="" class="social__link" aria-label="link instagram">
                 <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="social__insta">
                   <use xlink:href="img/sprite.svg#icon_instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link social__fbook">
+              <a href="" class="social__link social__fbook" aria-label="link facebook">
                 <svg viewBox="0 0 50 50"  xmlns="http://www.w3.org/2000/svg" class="social__book">
                   <use xlink:href="img/sprite.svg#facebook-f"></use>
                 </svg>

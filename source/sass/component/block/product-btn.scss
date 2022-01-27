@@ -2,7 +2,7 @@
   width: 100%;
   border: 0;
   background: transparent;
-  margin-bottom: 33px;
+  margin-bottom: 25px;
 }
 
 .product-btn__link-plus {
@@ -19,6 +19,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special-dark-grey;
+  margin-top: 20px;
   margin-bottom: 0;
 
   &:hover {
@@ -29,11 +30,12 @@
 .product-btn__block-plus {
   flex-direction: column;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 8px;
+  padding-bottom: 7px;
 }
 
 .product-btn__plus-icon {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {

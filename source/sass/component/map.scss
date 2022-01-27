@@ -1,15 +1,49 @@
+.map {
+  position: relative;
+  height: 470px;
+}
+
 .map__iframe {
   iframe {
     border: 0;
     width: 100%;
     height: 362px;
   }
+
+  .map__image {
+    position: absolute;
+    top: 108px;
+    left: 0;
+    background-image: url("../img/map-mib.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 362px;
+    z-index: -2;
+  }
 }
 
 @media (min-width: 768px) {
+  .map {
+    position: relative;
+    height: 580px;
+  }
+
   .map__iframe {
     iframe {
       border: 0;
+      width: 100%;
+      height: 400px;
+    }
+
+    .map__image {
+      position: absolute;
+      top: 179px;
+      left: 0;
+      background-image: url("../img/map-tab.png");
+      background-repeat: no-repeat;
+      background-position: center;
       width: 100%;
       height: 400px;
     }
@@ -19,6 +53,8 @@
 @media (min-width: 1440px) {
   .map {
     position: relative;
+    height: 400px;
+    width: auto;
   }
 
   .map__iframe {
@@ -27,6 +63,18 @@
       width: 100%;
       height: 400px;
       z-index: -1;
+    }
+
+    .map__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../img/map-desk.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 400px;
+      z-index: -2;
     }
   }
 }

@@ -1,14 +1,15 @@
 .first-screen__title-main-screen {
-  letter-spacing: 3px;
-  font-style: normal;
-  font-size: 30px;
+  font-family: $main-font;
+  letter-spacing: 2.2px;
+  font-size: 31px;
   line-height: 36px;
   text-align: center;
   color: $white;
 }
 
 .first-screen__title {
-  margin-top: 30px;
+  margin-top: 27px;
+  margin-left: 3px;
   margin-bottom: 25px;
 }
 
@@ -30,18 +31,27 @@
 }
 
 .first-screen__link {
+  text-transform: uppercase;
   box-sizing: border-box;
   display: inline-block;
   background: $basic-green;
   width: 100%;
-  padding: 7px 0;
+  padding: 10px 0;
   color: $white;
-  font-size: 17px;
+  font-size: 14px;
   text-align: center;
   text-decoration: none;
   font-family: $main-font;
-  font-weight: 400;
   margin-top: 1px;
+
+  &:hover {
+    background: $basic-green-2;
+  }
+
+  &:active {
+    background: $basic-green-2;
+    color: #ffffff4d;
+  }
 }
 
 @media (min-width: 768px) {
@@ -120,6 +130,10 @@
     margin-bottom: 42px;
   }
 
+  .first-screen__title-main-screen {
+    margin-top: 48px;
+  }
+
   .first-screen__text {
     margin-bottom: 52px;
   }
@@ -129,5 +143,9 @@
     top: 15px;
     left: 420px;
     z-index: -1;
+  }
+
+  .first-screen__link {
+    font-size: 20px;
   }
 }
