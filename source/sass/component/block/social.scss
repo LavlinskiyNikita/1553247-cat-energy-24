@@ -25,6 +25,7 @@
 .social__link {
   display: inline-block;
   padding: 18px;
+  padding-top: 21px;
 
   .social__vk {
     width: 23px;
@@ -81,5 +82,10 @@
     display: inline-block;
     padding: 12px;
     padding-top: 2px;
+  }
+
+  .social__fbook {
+    position: relative;
+    right: 4px;
   }
 }

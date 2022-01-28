@@ -225,10 +225,14 @@
 @media (min-width: 1440px) {
   .column {
     box-sizing: border-box;
-    padding: 45px 52px;
+    padding: 45px 54px;
     padding-bottom: 61px;
     width: 570px;
     background: $basic-grey;
+    margin-bottom: 0;
+  }
+
+  .column:not(:first-child) {
     margin-bottom: 0;
   }
 
@@ -263,7 +267,7 @@
       position: absolute;
       top: 100px;
       right: 0;
-      left: 23px;
+      left: 27px;
       transform: translateY(-50%);
     }
   }

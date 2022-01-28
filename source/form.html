@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="css/style.min.css" as="style">
+
+    <link rel="preload" href="fonts/Arial.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Oswald-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="preload" href="style.css" as="style">
     <title>Кэт энерджи форма</title>
   </head>
 
@@ -14,21 +19,21 @@
       <div class="container">
         <nav class="menu">
           <div class="menu__top">
-            <a class="menu__logo-link">
+            <a class="menu__logo-link" href="./index.html">
               <picture>
                 <source media="(min-width: 1440px)" srcset="./img/svg/logo/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="./img/svg/logo/logo-tablet.svg">
                 <img src="./img/svg/logo/logo-phone.svg" alt="car Energy">
               </picture>
             </a>
-            <a class="menu__logo-text">
+            <a href="./index.html" class="menu__logo-text">
               <picture>
                 <source media="(min-width: 1440px)" srcset="./img/svg/desktop_logo-text.svg">
                 <source media="(min-width: 768px)" srcset="./img/svg/catenergy.svg">
                 <img src="./img/svg/catenergy.svg" alt="car Energy">
               </picture>
             </a>
-            <button type="button" class="humburger " aria-label="открытие меню">
+            <button type="button" class="humburger humburger--no-js-none" aria-label="открытие меню">
               <span class="humburger__line humburger__line--one"></span>
               <span class="humburger__line humburger__line--ftree"></span>
               <span class="humburger__line humburger__line--four"></span>
@@ -37,13 +42,13 @@
 
           <ul class="menu__list menu__list-no-js">
             <li class="menu__item">
-              <a class="menu__link menu__link-main menu__link--current menu__link--main-link">главная</a>
+              <a href="./index.html" class="menu__link menu__link--main-link">главная</a>
             </li>
             <li class="menu__item">
-              <a href="./catalog.html" class="menu__link menu__link-main">каталог продукции</a>
+              <a href="./catalog.html" class="menu__link">каталог продукции</a>
             </li>
             <li class="menu__item">
-              <a href="./form.html" class="menu__link menu__link-main">подбор программы</a>
+              <a class="menu__link menu__link--current">подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -53,7 +58,7 @@
       <div class="container container-form">
         <section class="form-section">
           <div class="form-section__title">
-            <h1 class="title">Подбор программы</h1>
+            <h1 class="title form-section__title-text">Подбор программы</h1>
           </div>
           <div class="form-section__subitile">
             <p class="form-section__text">
@@ -133,14 +138,16 @@
               </legend>
               <div class="form__conatct-block">
                 <div class="form__email-block form__block">
-                  <span class="form__span-text">E-mail:*</span>
-                  <input class="form__input-content form__email-input" id="emailForm" type="email" placeholder="кuklachev@gmail.com" aria-label="ваш email">
-                  <label class="form__label-content form__email-label" for="emailForm"></label>
+                  <label class="form__label-content form__email-label" for="emailForm">
+                    <span class="form__span-text">E-mail:*</span>
+                    <input class="form__input-content form__email-input" id="emailForm" type="email" placeholder="кuklachev@gmail.com" aria-label="ваш email">
+                  </label>
                 </div>
                 <div class="form__email-block form__block">
-                  <span class="form__span-text">Телефон:*</span>
-                  <input class="form__input-content form__phone-input" id="phoneForm" type="number" min="10" placeholder="8 (960) 900-60-90" aria-label="ваш номер телефона">
-                  <label class="form__label-content form__phone-label" for="phoneForm"></label>
+                  <label class="form__label-content form__phone-label" for="phoneForm">
+                    <span class="form__span-text">Телефон:*</span>
+                    <input class="form__input-content form__phone-input" id="phoneForm" type="number" min="10" placeholder="8 (960) 900-60-90" aria-label="ваш номер телефона">
+                  </label>
                 </div>
               </div>
             </fieldset>
@@ -148,14 +155,17 @@
               <legend class="form__legend form__coment-legend">
                 <span class="form__legend-span">Комментарий</span>
               </legend>
-              <label>
-                <textarea
-                placeholder="Расскажите обо всех повадках кота"
-                name="massenge"
-                class="form__textarea"
-                aria-label="сдесть можете оставить камметнатрий"
-              ></textarea>
-              </label>
+                <div class="form__comment-blcok">
+                  <textarea
+                    autocomplete="off"
+                    placeholder=" "
+                    name="massenge"
+                    class="form__textarea"
+                    aria-label="сдесть можете оставить камметнатрий"
+                    id="comment"
+                  ></textarea>
+                  <label for="comment" class="form__paceholder-text">Расскажите обо всех повадках кота</label>
+                </div>
             </fieldset>
             <fieldset class="form__fieldset form__add">
               <legend class="form__legend form__legend--title">
@@ -229,7 +239,7 @@
         <div class="map">
           <div class="address">
             <div class="container address__block">
-              <div class="address__content address__content-form">
+              <div class="address__content">
                 <div class="address__invitation">
                   <p class="address__invitation-invitations">приглашаем <br> к сотрудничеству дилеров!</p>
                 </div>
@@ -249,8 +259,8 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638012513489!5m2!1sru!2sru"
               allowfullscreen=""
               loading="lazy"
+              aria-label="map"
             ></iframe>
-            <div class="map__image">
             </div>
           </div>
         </div>

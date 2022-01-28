@@ -32,8 +32,11 @@ if (exampleSlider) {
 const btnHumburger = document.querySelector(".humburger");
 const menu = document.querySelector(".menu__list");
 const menuNoJs = document.querySelector(".menu__list-no-js");
+const btnBurgerNoJs = document.querySelector(".humburger--no-js-none");
 
+btnHumburger.classList.remove("humburger--active");
 menuNoJs.classList.remove("menu__list-no-js")
+btnBurgerNoJs.classList.remove("humburger--no-js-none")
 
 btnHumburger.addEventListener('click', () => {
   menu.classList.toggle("menu__list--active");

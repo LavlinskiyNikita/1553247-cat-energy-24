@@ -63,11 +63,12 @@
 
   .first-screen__title {
     margin-top: 0;
-    margin-bottom: 41px;
+    margin-left: 0;
+    margin-bottom: 43px;
   }
 
   .first-screen__title-main-screen {
-    margin-top: 50px;
+    margin-top: 36px;
     letter-spacing: 0;
     width: 414px;
     line-height: 60px;
@@ -101,7 +102,7 @@
     width: 244px;
     padding: 13px 19px;
     color: $white;
-    font-size: 19px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -121,12 +122,13 @@
 @media (min-width: 1440px) {
   .first-screen {
     position: relative;
-    padding-left: 51px;
+    padding-left: 52px;
     min-height: auto;
   }
 
   .first-screen__title {
     padding-top: 48px;
+    margin-left: 0;
     margin-bottom: 42px;
   }
 

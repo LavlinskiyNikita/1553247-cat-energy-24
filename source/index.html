@@ -4,8 +4,13 @@
     <meta charset="utf-8" />
     <title>Кэт энерджи главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="fonts/Arial.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Oswald-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="preload" href="css/style.min.css" as="style">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="style.css" as="style">
 
   </head>
   <body class="page-body">
@@ -27,7 +32,7 @@
                 <img src="./img/svg/catenergy.svg" alt="car Energy">
               </picture>
             </a>
-            <button type="button" class="humburger " aria-label="открытие меню">
+            <button type="button" class="humburger humburger--no-js-none" aria-label="открытие меню">
               <span class="humburger__line humburger__line--one"></span>
               <span class="humburger__line humburger__line--ftree"></span>
               <span class="humburger__line humburger__line--four"></span>
@@ -193,7 +198,9 @@
                   <div class="example__range">
                     <button class="example__button example__button--before" aria-label="It was">было</button>
                     <div class="example__block-range">
-                      <input class="example__slider-range" type="range" min="0" max="100" value="50" step="1" />
+                      <label class="example__label-range">
+                        <input class="example__slider-range" type="range" min="0" max="100" value="50" step="1" />
+                    </label>
                     </div>
                     <button class="example__button example__button--after" aria-label="became">стало</button>
                   </div>

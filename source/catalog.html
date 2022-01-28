@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="css/style.min.css" as="style">
+
+    <link rel="preload" href="fonts/Arial.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Oswald-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="preload" href="style.css" as="style">
     <title>Кэт энерджи каталог</title>
   </head>
   <body class="page-body">
@@ -28,7 +34,7 @@
                 <img src="./img/svg/catenergy.svg" alt="car Energy">
               </picture>
             </a>
-            <button type="button" class="humburger " aria-label="открытие меню">
+            <button type="button" class="humburger humburger--no-js-none" aria-label="открытие меню">
               <span class="humburger__line humburger__line--one"></span>
               <span class="humburger__line humburger__line--ftree"></span>
               <span class="humburger__line humburger__line--four"></span>
@@ -37,13 +43,13 @@
 
           <ul class="menu__list menu__list-no-js">
             <li class="menu__item">
-              <a href="./index.html" class="menu__link menu__link-main menu__link--current menu__link--main-link">главная</a>
+              <a href="./index.html" class="menu__link menu__link--main-link">главная</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link-main">каталог продукции</a>
+              <a class="menu__link menu__link--current">каталог продукции</a>
             </li>
             <li class="menu__item">
-              <a href="./form.html" class="menu__link menu__link-main">подбор программы</a>
+              <a href="./form.html" class="menu__link ">подбор программы</a>
             </li>
           </ul>
         </nav>
