@@ -38,7 +38,7 @@ btnHumburger.classList.remove("humburger--active");
 menuNoJs.classList.remove("menu__list-no-js")
 btnBurgerNoJs.classList.remove("humburger--no-js-none")
 
-btnHumburger.addEventListener('click', () => {
+btnHumburger.addEventListener("click", () => {
   menu.classList.toggle("menu__list--active");
   btnHumburger.classList.toggle("humburger--active");
 });
