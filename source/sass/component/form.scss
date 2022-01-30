@@ -157,6 +157,14 @@
   border: 2px solid $black;
 }
 
+.form__custom-radio-input:disabled + .form__custom-radio::before {
+  opacity: 0.3;
+}
+
+.form__custom-radio-input:disabled:checked + .form__custom-radio::after {
+  opacity: 0.3;
+}
+
 .form__custom-radio--span {
   position: absolute;
   left: -10px;
@@ -368,6 +376,14 @@
 
 .form__custom-checkbox-input:checked + .form__custom-checkbox::before {
   opacity: 1;
+}
+
+.form__custom-checkbox-input:disabled + .form__custom-checkbox {
+  opacity: 0.3;
+}
+
+.form__custom-checkbox-input:disabled:checked + .form__custom-checkbox::before {
+  opacity: 0.3;
 }
 
 .form__custom-checkbox {
